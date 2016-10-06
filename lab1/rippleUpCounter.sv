@@ -11,6 +11,19 @@ module rippleUpCounter(out, clk, rst);
 	assign out = {Q3, Q2, Q1, Q0}; //not {Q0, Q1, Q2, Q3};
 endmodule
 
+module DFlipFlop(q, qBar, D, clk, rst);
+	input D, clk, rst;
+	output q, qBar;
+	reg q;
+	
+	not n1 (qBar, q);
+	always@ (negedge rst or posedge clk) begin
+		if(!rst)
+			q = 0;
+		else
+			q = D;
+	end
+endmodule
 
 module rippleUpCounter_testbench;
 	logic [3:0] out;
@@ -25,8 +38,7 @@ module rippleUpCounter_testbench;
 	end
 	
 	initial begin
-		rst=0; @(posedge clk);;
-		rst=1; @(posedge clk);;
+		rst=0; @(posedge clk);
+		rst=1; @(posedge clk);
 	end
 endmodule
-	
