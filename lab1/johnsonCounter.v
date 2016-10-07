@@ -1,3 +1,4 @@
+`include "johnsonCounter.v"
 module johnsonCounter(out, clk, rst);
 	output logic [3:0] out;
 	input logic clk, rst;
@@ -20,23 +21,5 @@ module DFlipFlop(q, qBar, D, clk, rst);
 			q = 0;
 		else
 			q = D;
-	end
-endmodule
-
-module johnsonCounter_testbench;
-	logic [3:0] out;
-	logic clk, rst;
-
-	johnsonCounter dut(out, clk, rst);
-
-	parameter PERIOD = 100; // period = length of clock
-	initial begin
-		clk <= 0;
-		forever #(PERIOD/2) clk = ~clk;
-	end
-
-	initial begin
-		rst=0; @(posedge clk);
-		rst=1; @(posedge clk);
 	end
 endmodule
