@@ -14,7 +14,7 @@ module johnsonUpCounter(out, clk, rst);
 		end	
 	end
 
-	assign out = temp; 
+	assign out = temp;
 endmodule
 
 module DFlipFlop(q, qBar, D, clk, rst);

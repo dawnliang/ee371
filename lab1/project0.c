@@ -10,7 +10,7 @@ int main(void)
 	int z = 0;
 	float a = 0.0;
 
-	//  preform a simple calculation
+	//  perform a simple calculation
 	z = x + y;
 
 	//  print the results of the calculation to the display
