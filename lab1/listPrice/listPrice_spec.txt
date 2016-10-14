@@ -1,0 +1,14 @@
+abstract
+
+introduction
+
+inputs
+- manufacturer's cost
+- est. dealer's mark-up
+- sales tax
+- est. pre-tax discount
+
+outputs
+- est. list price of car
+
+major functions
