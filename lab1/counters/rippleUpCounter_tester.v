@@ -1,3 +1,10 @@
+/*
+	Ripple-up counter tester
+
+	Authors: William Li, Dawn Liang, Jun Park
+	Date: 16 Oct 2016
+*/
+
 `include "rippleUpCounter.v"
 module rippleUpCounter_testbench;
 	logic [3:0] out;

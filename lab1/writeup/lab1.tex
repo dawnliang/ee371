@@ -1,0 +1,81 @@
+\documentclass{article}
+
+\title{EE 371 Autumn 2016 - Lab 1}
+\date{\today}
+\author{William Li, Jun Park, Dawn Liang}
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Verilog,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+
+\maketitle
+\newpage
+\pagenumbering{arabic}
+
+\section{Abstract}
+
+\section{Introduction}
+
+\paragraph{}
+This lab focuses on designing and building VHDL (Verilog Hardware Description Language) programs. We built four different types of counters (a four stage ripple up counter using gate modeling, a four stage synchronous up counter using both dataflow model and schematic entry,   and a four stage synchronous Johnson up counter using the behavioural model). To build these counters, we were introduced to both Icarus Verilog (iVerilog) and GTKWave analysis. We designed the counters using iVerilog and tested the output waveforms using GTKWave analysis. We then loaded our designs onto an Altera FPGA where we then did further testing using Signal Tap II, a logic analyzer for detecting the output waveform on the FPGA. Finally, we began a brief introduction into the C programming language. We learned the basics of a C program through the CodeBlocks IDE by compiling the Project0.c file. Finally, we built a simple C car calculator program that asks for relevant input data and outputs an approximate list price for a brand new vehicle. 
+
+\section{Designing and building VHDL applications - counters}
+
+\lstinputlisting[language=Verilog]{../counters/DFlipFlop.v}
+
+\subsection{Ripple up counter}
+\lstinputlisting[language=Verilog]{../counters/rippleUpCounter.v}
+\lstinputlisting[language=Verilog]{../counters/rippleUpCounter_tester.v}
+
+%\begin{figure}
+%	\includegraphics[width=\linewidth]{}
+%	\caption{Ripple-up counter waveform in gtkwave}
+%	\label{fig:ripple-up_waveform}
+%\end{figure}
+
+%\begin{figure}
+%	\includegraphics[width=\linewidth]{}
+%	\caption{Ripple-up counter RTL view}
+%	\label{fig:ripple-up_waveform}
+%\end{figure}
+
+\subsection{Synchronous up counter}
+\lstinputlisting[language=Verilog]{../counters/synUpCounter.v}
+\lstinputlisting[language=Verilog]{../counters/synUpCounter_tester.v}
+
+\subsection{Johnson up counter}
+\lstinputlisting[language=Verilog]{../counters/johnsonUpCounter.v}
+\lstinputlisting[language=Verilog]{../counters/johnsonUpCounter_tester.v}
+
+\subsection{Synchronous up counter (schematic entry)}
+
+\section{Learning the C language}
+
+\lstinputlisting[language=C]{../listPrice/listPrice/main.c}
+
+\section{Failure Modes Analysis}
+
+\end{document}
