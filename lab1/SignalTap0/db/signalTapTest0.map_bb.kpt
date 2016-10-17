@@ -1,0 +1,186 @@
+<kpt_db name="signalTapTest0.map_bb" kpt_version="1.0">
+  <key_points_set type="reference" hier_sep="/">
+    <key_point id="1" type="register">
+      <name>LEDR[1]</name>
+    </key_point>
+    <key_point id="2" type="register">
+      <name>LEDR[3]</name>
+    </key_point>
+    <key_point id="3" type="register">
+      <name>LEDR[5]</name>
+    </key_point>
+    <key_point id="4" type="register">
+      <name>LEDR[7]</name>
+    </key_point>
+    <key_point id="5" type="register">
+      <name>LEDR[0]</name>
+    </key_point>
+    <key_point id="6" type="register">
+      <name>LEDR[2]</name>
+    </key_point>
+    <key_point id="7" type="register">
+      <name>LEDR[4]</name>
+    </key_point>
+    <key_point id="8" type="register">
+      <name>LEDR[6]</name>
+    </key_point>
+  </key_points_set>
+  <key_points_set type="transition" hier_sep="|">
+  </key_points_set>
+  <key_points_set type="transformed" hier_sep="|">
+    <key_point id="9" type="register">
+      <name>LEDR[1]~reg0</name>
+    </key_point>
+    <key_point id="10" type="register">
+      <name>LEDR[3]~reg0</name>
+    </key_point>
+    <key_point id="11" type="register">
+      <name>LEDR[5]~reg0</name>
+    </key_point>
+    <key_point id="12" type="register">
+      <name>LEDR[7]~reg0</name>
+    </key_point>
+    <key_point id="13" type="register">
+      <name>LEDR[0]~reg0</name>
+    </key_point>
+    <key_point id="14" type="register">
+      <name>LEDR[2]~reg0</name>
+    </key_point>
+    <key_point id="15" type="register">
+      <name>LEDR[4]~reg0</name>
+    </key_point>
+    <key_point id="16" type="register">
+      <name>LEDR[6]~reg0</name>
+    </key_point>
+  </key_points_set>
+  <transformations_set hier_sep="|">
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="5">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="13">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="1">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="9">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="6">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="14">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="2">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="10">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="7">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="15">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="3">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="11">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="8">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="16">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+    </transformation>
+    <transformation>
+      <kp_set type="reference">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="4">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+      <kp_set type="transformed">
+        <kp_state index="0">
+          <noninverts>
+            <kp id="12">            </kp>
+          </noninverts>
+        </kp_state>
+      </kp_set>
+    </transformation>
+  </transformations_set>
+</kpt_db>

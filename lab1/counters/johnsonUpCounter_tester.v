@@ -1,3 +1,9 @@
+/*
+	Testing module for johnson up counter
+
+	Author: Jun Park
+	Date: 16 Oct 2016
+*/
 module johnsonUpCounter_testbench;
 	logic [3:0] out;
 	logic clk, rst;

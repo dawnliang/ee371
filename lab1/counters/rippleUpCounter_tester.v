@@ -7,11 +7,14 @@
 
 `include "rippleUpCounter.v"
 module rippleUpCounter_testbench;
+	// declare variables
 	logic [3:0] out;
 	logic clk, rst;
 
+	// module declaration
 	rippleUpCounter dut(.out, .clk, .rst);
 	
+	// test module
 	parameter PERIOD = 100; // period = length of clock
 	initial begin
 		clk <= 0;

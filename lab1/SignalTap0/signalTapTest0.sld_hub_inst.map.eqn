@@ -1,0 +1,941 @@
+-- Copyright (C) 1991-2008 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--CB1_state[1] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[1]
+CB1_state[1] = AMPP_FUNCTION(C1_jsm_tck, CB1L19, C1_jsm_tms);
+
+
+--CB1_state[4] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[4]
+CB1_state[4] = AMPP_FUNCTION(C1_jsm_tck, CB1L21, C1_jsm_tms);
+
+
+--CB1_state[6] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[6]
+CB1_state[6] = AMPP_FUNCTION(C1_jsm_tck, CB1L23, C1_jsm_tms);
+
+
+--CB1_state[8] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[8]
+CB1_state[8] = AMPP_FUNCTION(C1_jsm_tck, CB1L25, !C1_jsm_tms);
+
+
+--CB1_state[11] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[11]
+CB1_state[11] = AMPP_FUNCTION(C1_jsm_tck, CB1L27, C1_jsm_tms);
+
+
+--CB1_state[13] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[13]
+CB1_state[13] = AMPP_FUNCTION(C1_jsm_tck, CB1L28, C1_jsm_tms);
+
+
+--CB1_state[15] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[15]
+CB1_state[15] = AMPP_FUNCTION(C1_jsm_tck, CB1L30, !C1_jsm_tms);
+
+
+--CB1_tms_cnt[2] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|tms_cnt[2]
+CB1_tms_cnt[2] = AMPP_FUNCTION(C1_jsm_tck, CB1L41, !C1_jsm_tms);
+
+
+--CB1_tms_cnt[1] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|tms_cnt[1]
+CB1_tms_cnt[1] = AMPP_FUNCTION(C1_jsm_tck, CB1L40, !C1_jsm_tms);
+
+
+--H2_word_counter[1] is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[1]
+H2_word_counter[1] = AMPP_FUNCTION(C1_jsm_tck, H2L9, H2L6, H2L7);
+
+
+--H2_word_counter[0] is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[0]
+H2_word_counter[0] = AMPP_FUNCTION(C1_jsm_tck, H2L4, H2L6, H2L7);
+
+
+--H2_word_counter[2] is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[2]
+H2_word_counter[2] = AMPP_FUNCTION(C1_jsm_tck, H2L12, H2L6, H2L7);
+
+
+--H2_word_counter[3] is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[3]
+H2_word_counter[3] = AMPP_FUNCTION(C1_jsm_tck, H2L15, H2L6, H2L7);
+
+
+--H2L4 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[0]~269
+H2L4 = AMPP_FUNCTION(H2_word_counter[0], GND);
+
+--H2L5 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[0]~270
+H2L5 = AMPP_FUNCTION(H2_word_counter[0]);
+
+
+--H2L9 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[1]~271
+H2L9 = AMPP_FUNCTION(H2_word_counter[1], GND, H2L5);
+
+--H2L10 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[1]~272
+H2L10 = AMPP_FUNCTION(H2_word_counter[1], H2L5);
+
+
+--H2_word_counter[4] is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[4]
+H2_word_counter[4] = AMPP_FUNCTION(C1_jsm_tck, H2L18, H2L6, H2L7);
+
+
+--H2L12 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[2]~275
+H2L12 = AMPP_FUNCTION(H2_word_counter[2], GND, H2L10);
+
+--H2L13 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[2]~276
+H2L13 = AMPP_FUNCTION(H2_word_counter[2], H2L10);
+
+
+--H2L15 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[3]~277
+H2L15 = AMPP_FUNCTION(H2_word_counter[3], GND, H2L13);
+
+--H2L16 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[3]~278
+H2L16 = AMPP_FUNCTION(H2_word_counter[3], H2L13);
+
+
+--H2L18 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[4]~279
+H2L18 = AMPP_FUNCTION(H2_word_counter[4], H2L16);
+
+
+--C1_hub_usr1 is sld_hub:sld_hub_inst|hub_usr1
+C1_hub_usr1 = AMPP_FUNCTION();
+
+
+--C1_node_raw_tck is sld_hub:sld_hub_inst|node_raw_tck
+C1_node_raw_tck = AMPP_FUNCTION();
+
+
+--C1_node_raw_tms is sld_hub:sld_hub_inst|node_raw_tms
+C1_node_raw_tms = AMPP_FUNCTION();
+
+
+--C1_hub_tdo is sld_hub:sld_hub_inst|hub_tdo
+C1_hub_tdo = AMPP_FUNCTION();
+
+
+--C1_node_ena[1] is sld_hub:sld_hub_inst|node_ena[1]
+C1_node_ena[1] = AMPP_FUNCTION();
+
+
+--C1_node_ir_out[1][0] is sld_hub:sld_hub_inst|node_ir_out[1][0]
+C1_node_ir_out[1][0] = AMPP_FUNCTION();
+
+
+--C1_node_ir_out[1][1] is sld_hub:sld_hub_inst|node_ir_out[1][1]
+C1_node_ir_out[1][1] = AMPP_FUNCTION();
+
+
+--C1_node_ir_out[1][2] is sld_hub:sld_hub_inst|node_ir_out[1][2]
+C1_node_ir_out[1][2] = AMPP_FUNCTION();
+
+
+--C1_node_ir_out[1][3] is sld_hub:sld_hub_inst|node_ir_out[1][3]
+C1_node_ir_out[1][3] = AMPP_FUNCTION();
+
+
+--C1_node_ir_out[1][4] is sld_hub:sld_hub_inst|node_ir_out[1][4]
+C1_node_ir_out[1][4] = AMPP_FUNCTION();
+
+
+--C1_node_ir_out[1][5] is sld_hub:sld_hub_inst|node_ir_out[1][5]
+C1_node_ir_out[1][5] = AMPP_FUNCTION();
+
+
+--C1_node_ir_out[1][6] is sld_hub:sld_hub_inst|node_ir_out[1][6]
+C1_node_ir_out[1][6] = AMPP_FUNCTION();
+
+
+--C1_node_ir_out[1][7] is sld_hub:sld_hub_inst|node_ir_out[1][7]
+C1_node_ir_out[1][7] = AMPP_FUNCTION();
+
+
+--C1_node_tck is sld_hub:sld_hub_inst|node_tck
+C1_node_tck = AMPP_FUNCTION();
+
+
+--C1_node_tdi is sld_hub:sld_hub_inst|node_tdi
+C1_node_tdi = AMPP_FUNCTION();
+
+
+--C1_node_usr1 is sld_hub:sld_hub_inst|node_usr1
+C1_node_usr1 = AMPP_FUNCTION();
+
+
+--C1_node_rti is sld_hub:sld_hub_inst|node_rti
+C1_node_rti = AMPP_FUNCTION();
+
+
+--C1_node_shift is sld_hub:sld_hub_inst|node_shift
+C1_node_shift = AMPP_FUNCTION();
+
+
+--C1_node_update is sld_hub:sld_hub_inst|node_update
+C1_node_update = AMPP_FUNCTION();
+
+
+--C1_node_clrn is sld_hub:sld_hub_inst|node_clrn
+C1_node_clrn = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_tlr is sld_hub:sld_hub_inst|node_jtag_state_tlr
+C1_node_jtag_state_tlr = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_rti is sld_hub:sld_hub_inst|node_jtag_state_rti
+C1_node_jtag_state_rti = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_sdrs is sld_hub:sld_hub_inst|node_jtag_state_sdrs
+C1_node_jtag_state_sdrs = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_cdr is sld_hub:sld_hub_inst|node_jtag_state_cdr
+C1_node_jtag_state_cdr = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_sdr is sld_hub:sld_hub_inst|node_jtag_state_sdr
+C1_node_jtag_state_sdr = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_e1dr is sld_hub:sld_hub_inst|node_jtag_state_e1dr
+C1_node_jtag_state_e1dr = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_pdr is sld_hub:sld_hub_inst|node_jtag_state_pdr
+C1_node_jtag_state_pdr = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_e2dr is sld_hub:sld_hub_inst|node_jtag_state_e2dr
+C1_node_jtag_state_e2dr = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_udr is sld_hub:sld_hub_inst|node_jtag_state_udr
+C1_node_jtag_state_udr = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_sirs is sld_hub:sld_hub_inst|node_jtag_state_sirs
+C1_node_jtag_state_sirs = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_cir is sld_hub:sld_hub_inst|node_jtag_state_cir
+C1_node_jtag_state_cir = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_sir is sld_hub:sld_hub_inst|node_jtag_state_sir
+C1_node_jtag_state_sir = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_e1ir is sld_hub:sld_hub_inst|node_jtag_state_e1ir
+C1_node_jtag_state_e1ir = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_pir is sld_hub:sld_hub_inst|node_jtag_state_pir
+C1_node_jtag_state_pir = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_e2ir is sld_hub:sld_hub_inst|node_jtag_state_e2ir
+C1_node_jtag_state_e2ir = AMPP_FUNCTION();
+
+
+--C1_node_jtag_state_uir is sld_hub:sld_hub_inst|node_jtag_state_uir
+C1_node_jtag_state_uir = AMPP_FUNCTION();
+
+
+--C1_jsm_tck is sld_hub:sld_hub_inst|jsm_tck
+C1_jsm_tck = AMPP_FUNCTION();
+
+
+--C1_jsm_tms is sld_hub:sld_hub_inst|jsm_tms
+C1_jsm_tms = AMPP_FUNCTION();
+
+
+--C1_hub_tdo_reg is sld_hub:sld_hub_inst|hub_tdo_reg
+C1_hub_tdo_reg = AMPP_FUNCTION(!C1_jsm_tck, C1L23, !CB1_state[8]);
+
+
+--C1_jtag_debug_mode is sld_hub:sld_hub_inst|jtag_debug_mode
+C1_jtag_debug_mode = AMPP_FUNCTION(C1_jsm_tck, C1L53, CB1_state[0]);
+
+
+--BB6_Q[0] is sld_hub:sld_hub_inst|sld_dffex:IRF_ENA|Q[0]
+BB6_Q[0] = AMPP_FUNCTION(C1_jsm_tck, C1_hub_tdi, !C1_CLR_SIGNAL, C1L35);
+
+
+--BB2_Q[0] is sld_hub:sld_hub_inst|sld_dffex:BROADCAST|Q[0]
+BB2_Q[0] = AMPP_FUNCTION(C1_jsm_tck, BB2L4, !C1_CLR_SIGNAL);
+
+
+--C1L57 is sld_hub:sld_hub_inst|node_ena~10
+C1L57 = AMPP_FUNCTION(C1_jtag_debug_mode, BB6_Q[0], BB2_Q[0]);
+
+
+--BB4_Q[0] is sld_hub:sld_hub_inst|sld_dffex:\GEN_IRF:1:IRF|Q[0]
+BB4_Q[0] = AMPP_FUNCTION(C1_jsm_tck, C1L27, !C1_CLR_SIGNAL, C1L37);
+
+
+--BB4_Q[1] is sld_hub:sld_hub_inst|sld_dffex:\GEN_IRF:1:IRF|Q[1]
+BB4_Q[1] = AMPP_FUNCTION(C1_jsm_tck, C1L28, !C1_CLR_SIGNAL, C1L37);
+
+
+--BB4_Q[2] is sld_hub:sld_hub_inst|sld_dffex:\GEN_IRF:1:IRF|Q[2]
+BB4_Q[2] = AMPP_FUNCTION(C1_jsm_tck, C1L29, !C1_CLR_SIGNAL, C1L37);
+
+
+--BB4_Q[3] is sld_hub:sld_hub_inst|sld_dffex:\GEN_IRF:1:IRF|Q[3]
+BB4_Q[3] = AMPP_FUNCTION(C1_jsm_tck, C1L30, !C1_CLR_SIGNAL, C1L37);
+
+
+--BB4_Q[4] is sld_hub:sld_hub_inst|sld_dffex:\GEN_IRF:1:IRF|Q[4]
+BB4_Q[4] = AMPP_FUNCTION(C1_jsm_tck, C1L31, !C1_CLR_SIGNAL, C1L37);
+
+
+--BB4_Q[5] is sld_hub:sld_hub_inst|sld_dffex:\GEN_IRF:1:IRF|Q[5]
+BB4_Q[5] = AMPP_FUNCTION(C1_jsm_tck, C1L32, !C1_CLR_SIGNAL, C1L37);
+
+
+--BB4_Q[6] is sld_hub:sld_hub_inst|sld_dffex:\GEN_IRF:1:IRF|Q[6]
+BB4_Q[6] = AMPP_FUNCTION(C1_jsm_tck, C1L33, !C1_CLR_SIGNAL, C1L37);
+
+
+--BB4_Q[7] is sld_hub:sld_hub_inst|sld_dffex:\GEN_IRF:1:IRF|Q[7]
+BB4_Q[7] = AMPP_FUNCTION(C1_jsm_tck, C1L34, !C1_CLR_SIGNAL, C1L37);
+
+
+--C1_hub_tck is sld_hub:sld_hub_inst|hub_tck
+C1_hub_tck = AMPP_FUNCTION();
+
+
+--C1_hub_tdi is sld_hub:sld_hub_inst|hub_tdi
+C1_hub_tdi = AMPP_FUNCTION();
+
+
+--C1_jtag_debug_mode_usr1 is sld_hub:sld_hub_inst|jtag_debug_mode_usr1
+C1_jtag_debug_mode_usr1 = AMPP_FUNCTION(C1_jsm_tck, C1L9, CB1_state[0], CB1_state[12]);
+
+
+--C1_hub_rti is sld_hub:sld_hub_inst|hub_rti
+C1_hub_rti = AMPP_FUNCTION();
+
+
+--C1_hub_shift is sld_hub:sld_hub_inst|hub_shift
+C1_hub_shift = AMPP_FUNCTION();
+
+
+--C1_hub_update is sld_hub:sld_hub_inst|hub_update
+C1_hub_update = AMPP_FUNCTION();
+
+
+--C1_CLR_SIGNAL is sld_hub:sld_hub_inst|CLR_SIGNAL
+C1_CLR_SIGNAL = AMPP_FUNCTION(C1_jsm_tck, C1L2);
+
+
+--CB1_state[0] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[0]
+CB1_state[0] = AMPP_FUNCTION(C1_jsm_tck, CB1L32);
+
+
+--CB1_state[2] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[2]
+CB1_state[2] = AMPP_FUNCTION(C1_jsm_tck, CB1L33);
+
+
+--CB1_state[3] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[3]
+CB1_state[3] = AMPP_FUNCTION(C1_jsm_tck, CB1L20);
+
+
+--CB1_state[5] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[5]
+CB1_state[5] = AMPP_FUNCTION(C1_jsm_tck, CB1L22);
+
+
+--CB1_state[7] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[7]
+CB1_state[7] = AMPP_FUNCTION(C1_jsm_tck, CB1L24);
+
+
+--CB1_state[9] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[9]
+CB1_state[9] = AMPP_FUNCTION(C1_jsm_tck, C1L106);
+
+
+--CB1_state[10] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[10]
+CB1_state[10] = AMPP_FUNCTION(C1_jsm_tck, CB1L26);
+
+
+--CB1_state[12] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[12]
+CB1_state[12] = AMPP_FUNCTION(C1_jsm_tck, CB1L34);
+
+
+--CB1_state[14] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[14]
+CB1_state[14] = AMPP_FUNCTION(C1_jsm_tck, CB1L29);
+
+
+--H2_WORD_SR[0] is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR[0]
+H2_WORD_SR[0] = AMPP_FUNCTION(C1_jsm_tck, H2L29, H2L22);
+
+
+--C1_HUB_BYPASS_REG is sld_hub:sld_hub_inst|HUB_BYPASS_REG
+C1_HUB_BYPASS_REG = AMPP_FUNCTION(C1_jsm_tck, C1L13);
+
+
+--DB1_dffe1a[0] is sld_hub:sld_hub_inst|lpm_decode:instruction_decoder|decode_aoi:auto_generated|dffe1a[0]
+DB1_dffe1a[0] = AMPP_FUNCTION(C1_jsm_tck, DB1_w_anode1w[3], !C1_CLR_SIGNAL, C1L5);
+
+
+--C1L20 is sld_hub:sld_hub_inst|hub_tdo_reg~292
+C1L20 = AMPP_FUNCTION(H2_WORD_SR[0], C1_HUB_BYPASS_REG, DB1_dffe1a[0], C1_jtag_debug_mode_usr1);
+
+
+--BB7_Q[0] is sld_hub:sld_hub_inst|sld_dffex:IRF_ENA_0|Q[0]
+BB7_Q[0] = AMPP_FUNCTION(C1_jsm_tck, BB7L3, C1L35);
+
+
+--C1L21 is sld_hub:sld_hub_inst|hub_tdo_reg~293
+C1L21 = AMPP_FUNCTION(C1L20, BB7_Q[0], CB1_state[3], CB1_state[4]);
+
+
+--BB3_Q[0] is sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[0]
+BB3_Q[0] = AMPP_FUNCTION(C1_jsm_tck, C1L38, !C1_CLR_SIGNAL, BB3L4);
+
+
+--C1_node_tdo[1] is sld_hub:sld_hub_inst|node_tdo[1]
+C1_node_tdo[1] = AMPP_FUNCTION();
+
+
+--C1L22 is sld_hub:sld_hub_inst|hub_tdo_reg~294
+C1L22 = AMPP_FUNCTION(BB3_Q[0], BB6_Q[0], C1_node_tdo[1], C1_jtag_debug_mode_usr1);
+
+
+--C1L107 is sld_hub:sld_hub_inst|process13~0
+C1L107 = AMPP_FUNCTION(CB1_state[3], CB1_state[4]);
+
+
+--C1L23 is sld_hub:sld_hub_inst|hub_tdo_reg~295
+C1L23 = AMPP_FUNCTION(C1L21, C1L22, C1L107, C1_hub_tdo_reg);
+
+
+--C1_jtag_debug_mode_usr0 is sld_hub:sld_hub_inst|jtag_debug_mode_usr0
+C1_jtag_debug_mode_usr0 = AMPP_FUNCTION(C1_jsm_tck, C1L8, CB1_state[0], CB1_state[12]);
+
+
+--C1L51 is sld_hub:sld_hub_inst|jtag_debug_mode~2
+C1L51 = AMPP_FUNCTION(C1_jtag_debug_mode_usr1, C1_jtag_debug_mode_usr0);
+
+
+--C1L52 is sld_hub:sld_hub_inst|jtag_debug_mode~171
+C1L52 = AMPP_FUNCTION(CB1_state[12], C1_jsm_tms, CB1_state[2]);
+
+
+--C1L53 is sld_hub:sld_hub_inst|jtag_debug_mode~172
+C1L53 = AMPP_FUNCTION(C1L51, C1_jtag_debug_mode, C1L52, CB1_state[15]);
+
+
+--C1_OK_TO_UPDATE_IR_Q is sld_hub:sld_hub_inst|OK_TO_UPDATE_IR_Q
+C1_OK_TO_UPDATE_IR_Q = AMPP_FUNCTION(C1_jsm_tck, C1L105);
+
+
+--C1L35 is sld_hub:sld_hub_inst|IRF_ENA_ENABLE~21
+C1L35 = AMPP_FUNCTION(C1_jsm_tms, C1_jtag_debug_mode_usr1, CB1_state[4], C1_OK_TO_UPDATE_IR_Q);
+
+
+--DB1_dffe1a[1] is sld_hub:sld_hub_inst|lpm_decode:instruction_decoder|decode_aoi:auto_generated|dffe1a[1]
+DB1_dffe1a[1] = AMPP_FUNCTION(C1_jsm_tck, DB1_w_anode18w[3], !C1_CLR_SIGNAL, C1L5);
+
+
+--BB2L3 is sld_hub:sld_hub_inst|sld_dffex:BROADCAST|Q[0]~52
+BB2L3 = AMPP_FUNCTION(BB7_Q[0], DB1_dffe1a[1]);
+
+
+--BB1L3 is sld_hub:sld_hub_inst|sld_dffex:RESET|Q[0]~59
+BB1L3 = AMPP_FUNCTION(CB1_state[8], C1_OK_TO_UPDATE_IR_Q);
+
+
+--DB1_dffe1a[2] is sld_hub:sld_hub_inst|lpm_decode:instruction_decoder|decode_aoi:auto_generated|dffe1a[2]
+DB1_dffe1a[2] = AMPP_FUNCTION(C1_jsm_tck, DB1_w_anode28w[3], !C1_CLR_SIGNAL, C1L5);
+
+
+--C1L36 is sld_hub:sld_hub_inst|IRF_ENABLE[1]~64
+C1L36 = AMPP_FUNCTION(BB7_Q[0], DB1_dffe1a[2]);
+
+
+--BB2L4 is sld_hub:sld_hub_inst|sld_dffex:BROADCAST|Q[0]~53
+BB2L4 = AMPP_FUNCTION(BB2L3, BB2_Q[0], BB1L3, C1L36);
+
+
+--BB5_Q[0] is sld_hub:sld_hub_inst|sld_dffex:\GEN_SHADOW_IRF:1:S_IRF|Q[0]
+BB5_Q[0] = AMPP_FUNCTION(C1_jsm_tck, BB3_Q[0], !C1_CLR_SIGNAL, C1L10);
+
+
+--C1L27 is sld_hub:sld_hub_inst|IRF_D[1][0]~72
+C1L27 = AMPP_FUNCTION(BB5_Q[0], BB3_Q[0], BB2_Q[0]);
+
+
+--C1L11 is sld_hub:sld_hub_inst|GEN_SHADOW_IRF~9
+C1L11 = AMPP_FUNCTION(CB1_state[5], C1_OK_TO_UPDATE_IR_Q);
+
+
+--C1L37 is sld_hub:sld_hub_inst|IRF_ENABLE[1]~65
+C1L37 = AMPP_FUNCTION(C1L11, C1L36, BB6_Q[0], BB2_Q[0]);
+
+
+--BB5_Q[1] is sld_hub:sld_hub_inst|sld_dffex:\GEN_SHADOW_IRF:1:S_IRF|Q[1]
+BB5_Q[1] = AMPP_FUNCTION(C1_jsm_tck, BB3_Q[1], !C1_CLR_SIGNAL, C1L10);
+
+
+--BB3_Q[1] is sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[1]
+BB3_Q[1] = AMPP_FUNCTION(C1_jsm_tck, C1L39, !C1_CLR_SIGNAL, BB3L4);
+
+
+--C1L28 is sld_hub:sld_hub_inst|IRF_D[1][1]~73
+C1L28 = AMPP_FUNCTION(BB5_Q[1], BB3_Q[1], BB2_Q[0]);
+
+
+--BB5_Q[2] is sld_hub:sld_hub_inst|sld_dffex:\GEN_SHADOW_IRF:1:S_IRF|Q[2]
+BB5_Q[2] = AMPP_FUNCTION(C1_jsm_tck, BB3_Q[2], !C1_CLR_SIGNAL, C1L10);
+
+
+--BB3_Q[2] is sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[2]
+BB3_Q[2] = AMPP_FUNCTION(C1_jsm_tck, C1L40, !C1_CLR_SIGNAL, BB3L4);
+
+
+--C1L29 is sld_hub:sld_hub_inst|IRF_D[1][2]~74
+C1L29 = AMPP_FUNCTION(BB5_Q[2], BB3_Q[2], BB2_Q[0]);
+
+
+--BB5_Q[3] is sld_hub:sld_hub_inst|sld_dffex:\GEN_SHADOW_IRF:1:S_IRF|Q[3]
+BB5_Q[3] = AMPP_FUNCTION(C1_jsm_tck, BB3_Q[3], !C1_CLR_SIGNAL, C1L10);
+
+
+--BB3_Q[3] is sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[3]
+BB3_Q[3] = AMPP_FUNCTION(C1_jsm_tck, C1L41, !C1_CLR_SIGNAL, BB3L4);
+
+
+--C1L30 is sld_hub:sld_hub_inst|IRF_D[1][3]~75
+C1L30 = AMPP_FUNCTION(BB5_Q[3], BB3_Q[3], BB2_Q[0]);
+
+
+--BB5_Q[4] is sld_hub:sld_hub_inst|sld_dffex:\GEN_SHADOW_IRF:1:S_IRF|Q[4]
+BB5_Q[4] = AMPP_FUNCTION(C1_jsm_tck, BB3_Q[4], !C1_CLR_SIGNAL, C1L10);
+
+
+--BB3_Q[4] is sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[4]
+BB3_Q[4] = AMPP_FUNCTION(C1_jsm_tck, C1L42, !C1_CLR_SIGNAL, BB3L4);
+
+
+--C1L31 is sld_hub:sld_hub_inst|IRF_D[1][4]~76
+C1L31 = AMPP_FUNCTION(BB5_Q[4], BB3_Q[4], BB2_Q[0]);
+
+
+--BB5_Q[5] is sld_hub:sld_hub_inst|sld_dffex:\GEN_SHADOW_IRF:1:S_IRF|Q[5]
+BB5_Q[5] = AMPP_FUNCTION(C1_jsm_tck, BB3_Q[5], !C1_CLR_SIGNAL, C1L10);
+
+
+--BB3_Q[5] is sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[5]
+BB3_Q[5] = AMPP_FUNCTION(C1_jsm_tck, C1L43, !C1_CLR_SIGNAL, BB3L4);
+
+
+--C1L32 is sld_hub:sld_hub_inst|IRF_D[1][5]~77
+C1L32 = AMPP_FUNCTION(BB5_Q[5], BB3_Q[5], BB2_Q[0]);
+
+
+--BB5_Q[6] is sld_hub:sld_hub_inst|sld_dffex:\GEN_SHADOW_IRF:1:S_IRF|Q[6]
+BB5_Q[6] = AMPP_FUNCTION(C1_jsm_tck, BB3_Q[6], !C1_CLR_SIGNAL, C1L10);
+
+
+--BB3_Q[6] is sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[6]
+BB3_Q[6] = AMPP_FUNCTION(C1_jsm_tck, C1L44, !C1_CLR_SIGNAL, BB3L4);
+
+
+--C1L33 is sld_hub:sld_hub_inst|IRF_D[1][6]~78
+C1L33 = AMPP_FUNCTION(BB5_Q[6], BB3_Q[6], BB2_Q[0]);
+
+
+--BB5_Q[7] is sld_hub:sld_hub_inst|sld_dffex:\GEN_SHADOW_IRF:1:S_IRF|Q[7]
+BB5_Q[7] = AMPP_FUNCTION(C1_jsm_tck, BB3_Q[7], !C1_CLR_SIGNAL, C1L10);
+
+
+--BB3_Q[7] is sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[7]
+BB3_Q[7] = AMPP_FUNCTION(C1_jsm_tck, C1L45, !C1_CLR_SIGNAL, BB3L4);
+
+
+--C1L34 is sld_hub:sld_hub_inst|IRF_D[1][7]~79
+C1L34 = AMPP_FUNCTION(BB5_Q[7], BB3_Q[7], BB2_Q[0]);
+
+
+--K9_dffs[1] is sld_hub:sld_hub_inst|lpm_shiftreg:jtag_ir_register|dffs[1]
+K9_dffs[1] = AMPP_FUNCTION(C1_jsm_tck, K9_dffs[2], CB1_state[0], CB1_state[11]);
+
+
+--K9_dffs[9] is sld_hub:sld_hub_inst|lpm_shiftreg:jtag_ir_register|dffs[9]
+K9_dffs[9] = AMPP_FUNCTION(C1_jsm_tck, C1_hub_tdi, CB1_state[0], CB1_state[11]);
+
+
+--K9_dffs[8] is sld_hub:sld_hub_inst|lpm_shiftreg:jtag_ir_register|dffs[8]
+K9_dffs[8] = AMPP_FUNCTION(C1_jsm_tck, K9_dffs[9], CB1_state[0], CB1_state[11]);
+
+
+--K9_dffs[7] is sld_hub:sld_hub_inst|lpm_shiftreg:jtag_ir_register|dffs[7]
+K9_dffs[7] = AMPP_FUNCTION(C1_jsm_tck, K9_dffs[8], CB1_state[0], CB1_state[11]);
+
+
+--K9_dffs[6] is sld_hub:sld_hub_inst|lpm_shiftreg:jtag_ir_register|dffs[6]
+K9_dffs[6] = AMPP_FUNCTION(C1_jsm_tck, K9_dffs[7], CB1_state[0], CB1_state[11]);
+
+
+--C1L6 is sld_hub:sld_hub_inst|Equal0~83
+C1L6 = AMPP_FUNCTION(K9_dffs[9], K9_dffs[8], K9_dffs[7], K9_dffs[6]);
+
+
+--K9_dffs[3] is sld_hub:sld_hub_inst|lpm_shiftreg:jtag_ir_register|dffs[3]
+K9_dffs[3] = AMPP_FUNCTION(C1_jsm_tck, K9_dffs[4], CB1_state[0], CB1_state[11]);
+
+
+--K9_dffs[2] is sld_hub:sld_hub_inst|lpm_shiftreg:jtag_ir_register|dffs[2]
+K9_dffs[2] = AMPP_FUNCTION(C1_jsm_tck, K9_dffs[3], CB1_state[0], CB1_state[11]);
+
+
+--K9_dffs[5] is sld_hub:sld_hub_inst|lpm_shiftreg:jtag_ir_register|dffs[5]
+K9_dffs[5] = AMPP_FUNCTION(C1_jsm_tck, K9_dffs[6], CB1_state[0], CB1_state[11]);
+
+
+--K9_dffs[4] is sld_hub:sld_hub_inst|lpm_shiftreg:jtag_ir_register|dffs[4]
+K9_dffs[4] = AMPP_FUNCTION(C1_jsm_tck, K9_dffs[5], CB1_state[0], CB1_state[11]);
+
+
+--C1L7 is sld_hub:sld_hub_inst|Equal0~84
+C1L7 = AMPP_FUNCTION(K9_dffs[3], K9_dffs[2], K9_dffs[5], K9_dffs[4]);
+
+
+--K9_dffs[0] is sld_hub:sld_hub_inst|lpm_shiftreg:jtag_ir_register|dffs[0]
+K9_dffs[0] = AMPP_FUNCTION(C1_jsm_tck, K9_dffs[1], CB1_state[0], CB1_state[11]);
+
+
+--C1L9 is sld_hub:sld_hub_inst|Equal1~29
+C1L9 = AMPP_FUNCTION(K9_dffs[1], C1L6, C1L7, K9_dffs[0]);
+
+
+--BB1_Q[0] is sld_hub:sld_hub_inst|sld_dffex:RESET|Q[0]
+BB1_Q[0] = AMPP_FUNCTION(C1_jsm_tck, BB1L4, C1_jtag_debug_mode_usr1);
+
+
+--C1L2 is sld_hub:sld_hub_inst|CLR_SIGNAL~0
+C1L2 = AMPP_FUNCTION(CB1_state[1], BB1_Q[0]);
+
+
+--CB1_tms_cnt[0] is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|tms_cnt[0]
+CB1_tms_cnt[0] = AMPP_FUNCTION(C1_jsm_tck, CB1L39);
+
+
+--CB1L31 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~441
+CB1L31 = AMPP_FUNCTION(C1_jsm_tms, CB1_tms_cnt[2], CB1_tms_cnt[0], CB1_tms_cnt[1]);
+
+
+--CB1L32 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~442
+CB1L32 = AMPP_FUNCTION(CB1L31, C1_jsm_tms, CB1_state[9], CB1_state[0]);
+
+
+--CB1L19 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~5
+CB1L19 = AMPP_FUNCTION(CB1_state[1], CB1_state[8], CB1_state[15], CB1_state[0]);
+
+
+--CB1L33 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~443
+CB1L33 = AMPP_FUNCTION(C1_jsm_tms, CB1_state[1], CB1_state[8], CB1_state[15]);
+
+
+--CB1L20 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~10
+CB1L20 = AMPP_FUNCTION(CB1_state[2], C1_jsm_tms);
+
+
+--CB1L21 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~11
+CB1L21 = AMPP_FUNCTION(CB1_state[3], CB1_state[4], CB1_state[7]);
+
+
+--CB1L22 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~14
+CB1L22 = AMPP_FUNCTION(C1_jsm_tms, CB1_state[3], CB1_state[4]);
+
+
+--CB1L23 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~15
+CB1L23 = AMPP_FUNCTION(CB1_state[5], CB1_state[6]);
+
+
+--CB1L24 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~17
+CB1L24 = AMPP_FUNCTION(C1_jsm_tms, CB1_state[6]);
+
+
+--CB1L25 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~18
+CB1L25 = AMPP_FUNCTION(CB1_state[5], CB1_state[7]);
+
+
+--C1L106 is sld_hub:sld_hub_inst|process0~0
+C1L106 = AMPP_FUNCTION(C1_jsm_tms, CB1_state[2]);
+
+
+--CB1L26 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~21
+CB1L26 = AMPP_FUNCTION(CB1_state[9], C1_jsm_tms);
+
+
+--CB1L27 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~22
+CB1L27 = AMPP_FUNCTION(CB1_state[10], CB1_state[11], CB1_state[14]);
+
+
+--CB1L34 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~444
+CB1L34 = AMPP_FUNCTION(C1_jsm_tms, CB1_state[10], CB1_state[11]);
+
+
+--CB1L28 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~26
+CB1L28 = AMPP_FUNCTION(CB1_state[12], CB1_state[13]);
+
+
+--CB1L29 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~28
+CB1L29 = AMPP_FUNCTION(C1_jsm_tms, CB1_state[13]);
+
+
+--CB1L30 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state~29
+CB1L30 = AMPP_FUNCTION(CB1_state[12], CB1_state[14]);
+
+
+--H2L26 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR~1102
+H2L26 = AMPP_FUNCTION(H2_word_counter[1], C1_jtag_debug_mode_usr1, CB1_state[8], CB1_state[4]);
+
+
+--H2_WORD_SR[1] is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR[1]
+H2_WORD_SR[1] = AMPP_FUNCTION(C1_jsm_tck, H2L32, H2L22);
+
+
+--H2L27 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR~1103
+H2L27 = AMPP_FUNCTION(CB1_state[4], C1_jtag_debug_mode_usr1, CB1_state[8]);
+
+
+--H2L28 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR~1104
+H2L28 = AMPP_FUNCTION(H2_word_counter[0], H2_word_counter[2], H2_word_counter[3]);
+
+
+--H2L29 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR~1105
+H2L29 = AMPP_FUNCTION(H2L26, H2_WORD_SR[1], H2L27, H2L28);
+
+
+--H2_clear_signal is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|clear_signal
+H2_clear_signal = AMPP_FUNCTION(C1_jtag_debug_mode_usr1, CB1_state[8]);
+
+
+--C1L13 is sld_hub:sld_hub_inst|HUB_BYPASS_REG~16
+C1L13 = AMPP_FUNCTION(C1_hub_tdi, CB1_state[4]);
+
+
+--DB1_w_anode1w[3] is sld_hub:sld_hub_inst|lpm_decode:instruction_decoder|decode_aoi:auto_generated|w_anode1w[3]
+DB1_w_anode1w[3] = AMPP_FUNCTION(C1L51, BB3_Q[1], BB3_Q[2], BB3_Q[3]);
+
+
+--C1L4 is sld_hub:sld_hub_inst|comb~51
+C1L4 = AMPP_FUNCTION(C1_jtag_debug_mode_usr1, CB1_state[3], C1_jtag_debug_mode_usr0, CB1_state[4]);
+
+
+--C1L5 is sld_hub:sld_hub_inst|comb~52
+C1L5 = AMPP_FUNCTION(C1_jsm_tms, C1L4, C1_hub_tdi);
+
+
+--C1_node_ir_in[1][0] is sld_hub:sld_hub_inst|node_ir_in[1][0]
+C1_node_ir_in[1][0] = AMPP_FUNCTION();
+
+
+--C1L38 is sld_hub:sld_hub_inst|IRSR_D[0]~81
+C1L38 = AMPP_FUNCTION(BB3_Q[1], C1_node_ir_in[1][0], CB1_state[4]);
+
+
+--BB3_Q[8] is sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[8]
+BB3_Q[8] = AMPP_FUNCTION(C1_jsm_tck, BB3L14, !C1_CLR_SIGNAL);
+
+
+--DB1_dffe1a[3] is sld_hub:sld_hub_inst|lpm_decode:instruction_decoder|decode_aoi:auto_generated|dffe1a[3]
+DB1_dffe1a[3] = AMPP_FUNCTION(C1_jsm_tck, DB1_w_anode38w[3], !C1_CLR_SIGNAL, C1L5);
+
+
+--BB3L3 is sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[0]~270
+BB3L3 = AMPP_FUNCTION(CB1_state[4], BB3_Q[3], BB3_Q[8], DB1_dffe1a[3]);
+
+
+--C1L8 is sld_hub:sld_hub_inst|Equal0~85
+C1L8 = AMPP_FUNCTION(C1L6, C1L7, K9_dffs[1], K9_dffs[0]);
+
+
+--C1L105 is sld_hub:sld_hub_inst|OK_TO_UPDATE_IR_Q~54
+C1L105 = AMPP_FUNCTION(C1_jtag_debug_mode_usr1, C1_OK_TO_UPDATE_IR_Q, CB1_state[4], CB1_state[8]);
+
+
+--DB1_w_anode18w[3] is sld_hub:sld_hub_inst|lpm_decode:instruction_decoder|decode_aoi:auto_generated|w_anode18w[3]
+DB1_w_anode18w[3] = AMPP_FUNCTION(C1L51, BB3_Q[1], BB3_Q[2], BB3_Q[3]);
+
+
+--DB1_w_anode28w[3] is sld_hub:sld_hub_inst|lpm_decode:instruction_decoder|decode_aoi:auto_generated|w_anode28w[3]
+DB1_w_anode28w[3] = AMPP_FUNCTION(C1L51, BB3_Q[2], BB3_Q[1], BB3_Q[3]);
+
+
+--C1L10 is sld_hub:sld_hub_inst|GEN_SHADOW_IRF~0
+C1L10 = AMPP_FUNCTION(BB6_Q[0], CB1_state[5], C1_OK_TO_UPDATE_IR_Q);
+
+
+--C1_node_ir_in[1][1] is sld_hub:sld_hub_inst|node_ir_in[1][1]
+C1_node_ir_in[1][1] = AMPP_FUNCTION();
+
+
+--C1L39 is sld_hub:sld_hub_inst|IRSR_D[1]~82
+C1L39 = AMPP_FUNCTION(BB3_Q[2], C1_node_ir_in[1][1], CB1_state[4]);
+
+
+--C1_node_ir_in[1][2] is sld_hub:sld_hub_inst|node_ir_in[1][2]
+C1_node_ir_in[1][2] = AMPP_FUNCTION();
+
+
+--C1L40 is sld_hub:sld_hub_inst|IRSR_D[2]~83
+C1L40 = AMPP_FUNCTION(BB3_Q[3], C1_node_ir_in[1][2], CB1_state[4]);
+
+
+--C1_node_ir_in[1][3] is sld_hub:sld_hub_inst|node_ir_in[1][3]
+C1_node_ir_in[1][3] = AMPP_FUNCTION();
+
+
+--C1L41 is sld_hub:sld_hub_inst|IRSR_D[3]~84
+C1L41 = AMPP_FUNCTION(BB3_Q[4], C1_node_ir_in[1][3], CB1_state[4]);
+
+
+--C1_node_ir_in[1][4] is sld_hub:sld_hub_inst|node_ir_in[1][4]
+C1_node_ir_in[1][4] = AMPP_FUNCTION();
+
+
+--C1L42 is sld_hub:sld_hub_inst|IRSR_D[4]~85
+C1L42 = AMPP_FUNCTION(BB3_Q[5], C1_node_ir_in[1][4], CB1_state[4]);
+
+
+--C1_node_ir_in[1][5] is sld_hub:sld_hub_inst|node_ir_in[1][5]
+C1_node_ir_in[1][5] = AMPP_FUNCTION();
+
+
+--C1L43 is sld_hub:sld_hub_inst|IRSR_D[5]~86
+C1L43 = AMPP_FUNCTION(BB3_Q[6], C1_node_ir_in[1][5], CB1_state[4]);
+
+
+--C1_node_ir_in[1][6] is sld_hub:sld_hub_inst|node_ir_in[1][6]
+C1_node_ir_in[1][6] = AMPP_FUNCTION();
+
+
+--C1L44 is sld_hub:sld_hub_inst|IRSR_D[6]~87
+C1L44 = AMPP_FUNCTION(BB3_Q[7], C1_node_ir_in[1][6], CB1_state[4]);
+
+
+--C1_node_ir_in[1][7] is sld_hub:sld_hub_inst|node_ir_in[1][7]
+C1_node_ir_in[1][7] = AMPP_FUNCTION();
+
+
+--C1L45 is sld_hub:sld_hub_inst|IRSR_D[7]~88
+C1L45 = AMPP_FUNCTION(BB3_Q[8], C1_node_ir_in[1][7], CB1_state[4]);
+
+
+--DB1_dffe1a[7] is sld_hub:sld_hub_inst|lpm_decode:instruction_decoder|decode_aoi:auto_generated|dffe1a[7]
+DB1_dffe1a[7] = AMPP_FUNCTION(C1_jsm_tck, DB1_w_anode78w[3], !C1_CLR_SIGNAL, C1L5);
+
+
+--BB1L4 is sld_hub:sld_hub_inst|sld_dffex:RESET|Q[0]~60
+BB1L4 = AMPP_FUNCTION(BB1_Q[0], DB1_dffe1a[7], BB1L3, BB2_Q[0]);
+
+
+--CB1L41 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|tms_cnt~4
+CB1L41 = AMPP_FUNCTION(CB1_tms_cnt[2], CB1_tms_cnt[0], CB1_tms_cnt[1]);
+
+
+--CB1L39 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|tms_cnt~0
+CB1L39 = AMPP_FUNCTION(C1_jsm_tms, CB1_tms_cnt[0]);
+
+
+--CB1L40 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|tms_cnt~1
+CB1L40 = AMPP_FUNCTION(CB1_tms_cnt[0], CB1_tms_cnt[1]);
+
+
+--H2L30 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR~1106
+H2L30 = AMPP_FUNCTION(H2_word_counter[4], H2_word_counter[0], H2_word_counter[3]);
+
+
+--H2L6 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[0]~273
+H2L6 = AMPP_FUNCTION(H2_word_counter[1], H2_word_counter[2], H2L30, H2_clear_signal);
+
+
+--H2L7 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|word_counter[0]~274
+H2L7 = AMPP_FUNCTION(CB1_state[4], CB1_state[3], C1_jtag_debug_mode_usr0, H2_clear_signal);
+
+
+--H2_WORD_SR[2] is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR[2]
+H2_WORD_SR[2] = AMPP_FUNCTION(C1_jsm_tck, H2L34, H2L22);
+
+
+--H2L31 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR~1107
+H2L31 = AMPP_FUNCTION(H2_word_counter[0], H2_word_counter[3], H2_word_counter[4], H2_word_counter[2]);
+
+
+--H2L32 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR~1108
+H2L32 = AMPP_FUNCTION(H2L26, H2L27, H2_WORD_SR[2], H2L31);
+
+
+--C1_node_irq[1] is sld_hub:sld_hub_inst|node_irq[1]
+C1_node_irq[1] = AMPP_FUNCTION();
+
+
+--BB3L13 is sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[8]~271
+BB3L13 = AMPP_FUNCTION(C1_hub_tdi, C1_node_irq[1], CB1_state[4]);
+
+
+--BB3L14 is sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[8]~272
+BB3L14 = AMPP_FUNCTION(BB3L13, BB3_Q[8], C1_jtag_debug_mode_usr1, C1L107);
+
+
+--DB1_w_anode38w[3] is sld_hub:sld_hub_inst|lpm_decode:instruction_decoder|decode_aoi:auto_generated|w_anode38w[3]
+DB1_w_anode38w[3] = AMPP_FUNCTION(C1L51, BB3_Q[1], BB3_Q[2], BB3_Q[3]);
+
+
+--DB1_w_anode78w[3] is sld_hub:sld_hub_inst|lpm_decode:instruction_decoder|decode_aoi:auto_generated|w_anode78w[3]
+DB1_w_anode78w[3] = AMPP_FUNCTION(C1L51, BB3_Q[1], BB3_Q[2], BB3_Q[3]);
+
+
+--H2_WORD_SR[3] is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR[3]
+H2_WORD_SR[3] = AMPP_FUNCTION(C1_jsm_tck, H2L37, H2L22);
+
+
+--H2L33 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR~1109
+H2L33 = AMPP_FUNCTION(CB1_state[4], H2_WORD_SR[3], H2_word_counter[1], H2_word_counter[2]);
+
+
+--H2L34 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR~1110
+H2L34 = AMPP_FUNCTION(CB1_state[4], H2_clear_signal, H2L30, H2L33);
+
+
+--H2L35 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR~1111
+H2L35 = AMPP_FUNCTION(H2_word_counter[1], H2_word_counter[3], H2_word_counter[4], H2_word_counter[2]);
+
+
+--H2L36 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR~1112
+H2L36 = AMPP_FUNCTION(C1_jtag_debug_mode_usr1, CB1_state[8], CB1_state[4], H2_word_counter[0]);
+
+
+--H2L37 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR~1113
+H2L37 = AMPP_FUNCTION(C1_hub_tdi, H2L35, H2L36, H2L27);
+
+
+--H2L22 is sld_hub:sld_hub_inst|sld_rom_sr:HUB_INFO_REG|WORD_SR[0]~1114
+H2L22 = AMPP_FUNCTION(CB1_state[3], CB1_state[4], C1_jtag_debug_mode_usr0, H2_clear_signal);
+
+
+--BB3L4 is sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[0]~273
+BB3L4 = AMPP_FUNCTION(CB1_state[3], CB1_state[4], C1_jtag_debug_mode_usr1, BB3L3);
+
+
+--BB7L3 is sld_hub:sld_hub_inst|sld_dffex:IRF_ENA_0|Q[0]~10
+BB7L3 = AMPP_FUNCTION(C1_hub_tdi);
+
+
+--C1L3 is sld_hub:sld_hub_inst|CLR_SIGNAL~_wirecell
+C1L3 = AMPP_FUNCTION(C1_CLR_SIGNAL);
+
+
+--C1L24 is sld_hub:sld_hub_inst|hub_tdo_reg~_wirecell
+C1L24 = AMPP_FUNCTION(C1_hub_tdo_reg);
+
+
+--CB1L3 is sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[0]~_wirecell
+CB1L3 = AMPP_FUNCTION(CB1_state[0]);
+
+

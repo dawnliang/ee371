@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 OCT 2016 12:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 OCT 2016 23:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -88,6 +88,80 @@ Package graphics Info: Driver file: pdftex.def on input line 94.
 \Gin@req@height=\dimen107
 \Gin@req@width=\dimen108
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box28
+\beforetitleunit=\skip43
+\aftertitleunit=\skip44
+\ttl@plus=\dimen109
+\ttl@minus=\dimen110
+\ttl@toksa=\toks16
+\titlewidth=\dimen111
+\titlewidthlast=\dimen112
+\titlewidthfirst=\dimen113
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count96
+\Gm@cntv=\count97
+\c@Gm@tempcnt=\count98
+\Gm@bindingoffset=\dimen114
+\Gm@wd@mp=\dimen115
+\Gm@odd@mp=\dimen116
+\Gm@even@mp=\dimen117
+\Gm@layoutwidth=\dimen118
+\Gm@layoutheight=\dimen119
+\Gm@layouthoffset=\dimen120
+\Gm@layoutvoffset=\dimen121
+\Gm@dimlist=\toks17
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks18
+\footnotemargin=\dimen122
+\c@pp@next@reset=\count99
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+\CenteringLeftskip=\skip45
+\RaggedLeftLeftskip=\skip46
+\RaggedRightLeftskip=\skip47
+\CenteringRightskip=\skip48
+\RaggedLeftRightskip=\skip49
+\RaggedRightRightskip=\skip50
+\CenteringParfillskip=\skip51
+\RaggedLeftParfillskip=\skip52
+\RaggedRightParfillskip=\skip53
+\JustifyingParfillskip=\skip54
+\CenteringParindent=\skip55
+\RaggedLeftParindent=\skip56
+\RaggedRightParindent=\skip57
+\JustifyingParindent=\skip58
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
@@ -100,32 +174,32 @@ File: lstlang3.sty 2014/09/06 1.5e listings language file
 (./lab1.aux)
 \openout1 = `lab1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-\c@lstlisting=\count96
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+\c@lstlisting=\count100
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count97
-\scratchdimen=\dimen109
-\scratchbox=\box28
-\nofMPsegments=\count98
-\nofMParguments=\count99
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count100
-\MPscratchDim=\dimen110
-\MPnumerator=\count101
-\makeMPintoPDFobject=\count102
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count101
+\scratchdimen=\dimen123
+\scratchbox=\box29
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen124
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks20
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -133,10 +207,6 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -174,45 +244,155 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 34.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 34.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 34.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-[1
+Package ragged2e Info: ABD: executing \RaggedRight on input line 38.
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 40.
+ [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(../counters/DFlipFlop.v) (../counters/rippleUpCounter.v [1])
-(../counters/rippleUpCounter_tester.v [2]) (../counters/synUpCounter.v [3])
-(../counters/synUpCounter_tester.v [4]) (../counters/johnsonUpCounter.v
-[5]) (../counters/johnsonUpCounter_tester.v [6])
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./lab1
+.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+)
+\tf@toc=\write3
+\openout3 = `lab1.toc'.
+
+ [2] (../counters/DFlipFlop.v)
+[1] (../counters/rippleUpCounter.v [2]) (../counters/rippleUpCounter_tester.v)
+[3] <figures/waveforms/rippleUp_wave.png, id=24, 627.34375pt x 204.765pt>
+File: figures/waveforms/rippleUp_wave.png Graphic file (type png)
+
+<use figures/waveforms/rippleUp_wave.png>
+Package pdftex.def Info: figures/waveforms/rippleUp_wave.png used on input line
+ 116.
+(pdftex.def)             Requested size: 469.75502pt x 153.33276pt.
+
+<figures/RTLs/rippleUp_RTL.png, id=26, 517.935pt x 521.95pt>
+File: figures/RTLs/rippleUp_RTL.png Graphic file (type png)
+
+<use figures/RTLs/rippleUp_RTL.png>
+Package pdftex.def Info: figures/RTLs/rippleUp_RTL.png used on input line 120.
+(pdftex.def)             Requested size: 352.31625pt x 355.06465pt.
+ (../counters/synUpCounter.v)
+(../counters/synUpCounter_tester.v [4] [5 <./figures/waveforms/rippleUp_wave.pn
+g> <./figures/RTLs/rippleUp_RTL.png>]) [6]
+<figures/waveforms/synUp_wave.png, id=39, 625.33624pt x 204.765pt>
+File: figures/waveforms/synUp_wave.png Graphic file (type png)
+
+<use figures/waveforms/synUp_wave.png>
+Package pdftex.def Info: figures/waveforms/synUp_wave.png used on input line 13
+3.
+(pdftex.def)             Requested size: 469.75502pt x 153.8233pt.
+
+<figures/RTLs/synUp_RTL.png, id=40, 642.4pt x 482.80376pt>
+File: figures/RTLs/synUp_RTL.png Graphic file (type png)
+
+<use figures/RTLs/synUp_RTL.png>
+Package pdftex.def Info: figures/RTLs/synUp_RTL.png used on input line 137.
+(pdftex.def)             Requested size: 352.31625pt x 264.79146pt.
+ (../counters/johnsonUpCounter.v)
+(../counters/johnsonUpCounter_tester.v [7] [8 <./figures/waveforms/synUp_wave.p
+ng> <./figures/RTLs/synUp_RTL.png>]) [9]
+<figures/waveforms/johnson_wave.png, id=52, 627.34375pt x 203.76125pt>
+File: figures/waveforms/johnson_wave.png Graphic file (type png)
+
+<use figures/waveforms/johnson_wave.png>
+Package pdftex.def Info: figures/waveforms/johnson_wave.png used on input line 
+150.
+(pdftex.def)             Requested size: 469.75502pt x 152.58115pt.
+
+<figures/RTLs/johnson_RTL.png, id=53, 589.20125pt x 257.96375pt>
+File: figures/RTLs/johnson_RTL.png Graphic file (type png)
+
+<use figures/RTLs/johnson_RTL.png>
+Package pdftex.def Info: figures/RTLs/johnson_RTL.png used on input line 154.
+(pdftex.def)             Requested size: 352.31625pt x 154.25198pt.
+ [10 <./figures/waveforms/johnson_wave.png> <./figures/RTLs/johnson_RTL.png>]
+<figures/waveforms/schem_synUp_wave.png, id=59, 627.34375pt x 206.7725pt>
+File: figures/waveforms/schem_synUp_wave.png Graphic file (type png)
+
+<use figures/waveforms/schem_synUp_wave.png>
+Package pdftex.def Info: figures/waveforms/schem_synUp_wave.png used on input l
+ine 165.
+(pdftex.def)             Requested size: 469.75502pt x 154.83604pt.
+
+<figures/RTLs/schem_synUp_RTL.png, id=60, 649.42625pt x 360.34625pt>
+File: figures/RTLs/schem_synUp_RTL.png Graphic file (type png)
+
+<use figures/RTLs/schem_synUp_RTL.png>
+Package pdftex.def Info: figures/RTLs/schem_synUp_RTL.png used on input line 16
+9.
+(pdftex.def)             Requested size: 352.31625pt x 195.49132pt.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
-(../listPrice/listPrice/main.c [7]) [8] (./lab1.aux) ) 
+(../listPrice/listPrice/main.c [11 <./figures/waveforms/schem_synUp_wave.png> <
+./figures/RTLs/schem_synUp_RTL.png>]) [12] (./lab1.aux) ) 
 Here is how much of TeX's memory you used:
- 3199 strings out of 493089
- 46668 string characters out of 6134842
- 173514 words of memory out of 5000000
- 6635 multiletter control sequences out of 15000+600000
+ 4191 strings out of 493089
+ 62146 string characters out of 6134842
+ 204301 words of memory out of 5000000
+ 7588 multiletter control sequences out of 15000+600000
  8361 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,52p,1063b,1607s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on lab1.pdf (9 pages, 85219 bytes).
+ 38i,6n,52p,1009b,1615s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on lab1.pdf (14 pages, 244901 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

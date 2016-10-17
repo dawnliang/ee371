@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jan 06 16:40:27 2011
+Quartus II Version : 8.0 Build 215 05/29/2008 SJ Full Version
+Revision Name : signalTapTest0
+Top-level Entity Name : signalTapTest0
+Family : Cyclone II
+Total logic elements : 484
+    Total combinational functions : 388
+    Dedicated logic registers : 484
+Total registers : 484
+Total pins : 21
+Total virtual pins : 9
+Total memory bits : 1,024
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
