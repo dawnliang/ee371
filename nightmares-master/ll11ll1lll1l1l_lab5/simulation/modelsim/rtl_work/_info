@@ -1,0 +1,53 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\klholden\Documents\nightmares\ll11ll1lll1l1l_lab5\simulation\modelsim
+vreadOutBuffer
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 @AHO>eGnY01z>FTCS<ZA@1
+I1lF:Rh`B1e?O;2IMkgh`g3
+VWKJJa47RL`7aAAlOHUWUf3
+Z2 !s105 readOutBuffer_sv_unit
+S1
+Z3 dC:\Users\klholden\Documents\nightmares\ll11ll1lll1l1l_lab5\simulation\modelsim
+Z4 w1433121278
+Z5 8C:/Users/klholden/Documents/nightmares/ll11ll1lll1l1l_lab5/readOutBuffer.sv
+Z6 FC:/Users/klholden/Documents/nightmares/ll11ll1lll1l1l_lab5/readOutBuffer.sv
+L0 1
+Z7 OV;L;10.1e;51
+r1
+!s85 0
+31
+Z8 !s108 1433125110.785000
+Z9 !s107 C:/Users/klholden/Documents/nightmares/ll11ll1lll1l1l_lab5/readOutBuffer.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/klholden/Documents/nightmares/ll11ll1lll1l1l_lab5|C:/Users/klholden/Documents/nightmares/ll11ll1lll1l1l_lab5/readOutBuffer.sv|
+!s101 -O0
+Z11 o-sv -work work -O0
+Z12 !s92 -sv -work work +incdir+C:/Users/klholden/Documents/nightmares/ll11ll1lll1l1l_lab5 -O0
+nread@out@buffer
+vreadOutBuffer_testbench
+R1
+!i10b 1
+!s100 FAL@DF5P^OadGUOU;Y_S=3
+IC4ShK4ACUc^b:UjUaj81>3
+V>l3GF=XldVbmGc:3Kgf=20
+R2
+S1
+R3
+R4
+R5
+R6
+L0 33
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+R11
+R12
+nread@out@buffer_testbench

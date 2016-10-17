@@ -1,0 +1,21 @@
+
+State Machine - |DE1_SoC|leavingUranus:leavingInterlock|ps
+Name ps~4 ps~3 ps~2 
+ps.defaultState 0 0 0 
+ps.exitingTimer 0 0 1 
+ps.exitingState 0 1 0 
+ps.evacuateTimer 0 1 1 
+ps.evacuateState 1 0 0 
+ps.outerOpenState 1 0 1 
+ps.pressurizeReady 1 1 0 
+ps.pressurizingState 1 1 1 
+
+State Machine - |DE1_SoC|enteringUranus:enteringInterlock|ps
+Name ps~4 ps~3 ps~2 
+ps.defaultState 0 0 0 
+ps.arriveTiming 0 0 1 
+ps.waitForEvacuate 0 1 0 
+ps.evacTiming 0 1 1 
+ps.waitForPressurize 1 0 0 
+ps.pressurizeTiming 1 0 1 
+ps.exit 1 1 0 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="143" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Project,Library" />
+ <window width="1530" height="1160" x="70" y="0" />
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="324" />
+   <clocksource preferredWidth="324" />
+   <frequency preferredWidth="306" />
+  </columns>
+ </clocktable>
+ <generation synthesis="VERILOG" path="nios_system" />
+ <hdlexample language="VERILOG" />
+</preferences>

@@ -1,6 +1,4 @@
-/*
-	provided D-flipflop code
-*/
+// provided D-flipflop code
 module DFlipFlop(q, qBar, D, clk, rst);
 	input D, clk, rst;
 	output q, qBar;

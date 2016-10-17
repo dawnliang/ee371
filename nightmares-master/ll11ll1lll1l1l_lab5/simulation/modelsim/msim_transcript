@@ -1,0 +1,53 @@
+# Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do lights_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlib switchesqsys
+# ** Warning: (vlib-34) Library already exists at "switchesqsys".
+# 
+# vmap switchesqsys switchesqsys
+# Modifying modelsim.ini
+# vlog -vlog01compat -work switchesqsys +incdir+C:/Users/klholden/Documents/nightmares/ll11ll1lll1l1l_lab5/nios_system/synthesis/submodules {C:/Users/klholden/Documents/nightmares/ll11ll1lll1l1l_lab5/nios_system/synthesis/submodules/switchesqsys_nios2_processor_test_bench.v}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module switchesqsys_nios2_processor_test_bench
+# 
+# Top level modules:
+# 	switchesqsys_nios2_processor_test_bench
+# vlog -sv -work work +incdir+C:/Users/klholden/Documents/nightmares/ll11ll1lll1l1l_lab5 {C:/Users/klholden/Documents/nightmares/ll11ll1lll1l1l_lab5/readOutBuffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+# -- Compiling module readOutBuffer
+# -- Compiling module readOutBuffer_testbench
+# 
+# Top level modules:
+# 	readOutBuffer_testbench
+# 
+vsim work.readOutBuffer_testbench
+# vsim work.readOutBuffer_testbench 
+# Loading sv_std.std
+# Loading work.readOutBuffer_testbench
+# Loading work.readOutBuffer
+add wave -position end  sim:/readOutBuffer_testbench/clk
+add wave -position end  sim:/readOutBuffer_testbench/rst
+add wave -position end  sim:/readOutBuffer_testbench/load
+add wave -position end  sim:/readOutBuffer_testbench/parallelIn
+add wave -position end  sim:/readOutBuffer_testbench/empty
+add wave -position end  sim:/readOutBuffer_testbench/outputStream
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: zachn  Hostname: EE-137PC05  ProcessID: 6644
+# 
+#           Attempting to use alternate WLF file "./wlftd00nm0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftd00nm0
+# 
+run -all
+# Break in Module readOutBuffer_testbench at C:/Users/klholden/Documents/nightmares/ll11ll1lll1l1l_lab5/readOutBuffer.sv line 65

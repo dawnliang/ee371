@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 OCT 2016 23:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 OCT 2016 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -100,6 +100,14 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen112
 \titlewidthfirst=\dimen113
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count96
+\float@exts=\toks17
+\float@box=\box29
+\@float@everytoks=\toks18
+\@floatcapt=\box30
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -114,9 +122,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count96
-\Gm@cntv=\count97
-\c@Gm@tempcnt=\count98
+\Gm@cnth=\count97
+\Gm@cntv=\count98
+\c@Gm@tempcnt=\count99
 \Gm@bindingoffset=\dimen114
 \Gm@wd@mp=\dimen115
 \Gm@odd@mp=\dimen116
@@ -125,7 +133,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen119
 \Gm@layouthoffset=\dimen120
 \Gm@layoutvoffset=\dimen121
-\Gm@dimlist=\toks17
+\Gm@dimlist=\toks19
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ms/ragged2e.sty
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
@@ -135,9 +143,9 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks18
+\FN@temptoken=\toks20
 \footnotemargin=\dimen122
-\c@pp@next@reset=\count99
+\c@pp@next@reset=\count100
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -174,32 +182,32 @@ File: lstlang3.sty 2014/09/06 1.5e listings language file
 (./lab1.aux)
 \openout1 = `lab1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-\c@lstlisting=\count100
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+\c@lstlisting=\count101
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
+\scratchcounter=\count102
 \scratchdimen=\dimen123
-\scratchbox=\box29
-\nofMPsegments=\count102
-\nofMParguments=\count103
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count104
+\scratchbox=\box31
+\nofMPsegments=\count103
+\nofMParguments=\count104
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count105
 \MPscratchDim=\dimen124
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
-\everyMPtoPDFconversion=\toks20
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
+\everyMPtoPDFconversion=\toks22
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -278,15 +286,15 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package ragged2e Info: ABD: executing \RaggedRight on input line 38.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 39.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 38.
+LaTeX Info: Redefining \selectfont on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 40.
+(Font)              <12> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 40.
+(Font)              <8> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 40.
+(Font)              <6> on input line 41.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./lab1
@@ -299,100 +307,140 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `lab1.toc'.
 
- [2] (../counters/DFlipFlop.v)
-[1] (../counters/rippleUpCounter.v [2]) (../counters/rippleUpCounter_tester.v)
-[3] <figures/waveforms/rippleUp_wave.png, id=24, 627.34375pt x 204.765pt>
+ [2]
+Overfull \hbox (12.99573pt too wide) in paragraph at lines 58--59
+\OT1/cmr/m/n/10 low re-set. The first three were di-rectly writ-ten in Ver-ilog
+, the fourth had to be built us-ing Quar-tus' schematic 
+ []
+
+(../counters/DFlipFlop.v) [1]
+Overfull \hbox (14.91243pt too wide) in paragraph at lines 88--89
+\OT1/cmr/m/n/10 coun-ters, built with Quar-tus' schematic en-try, we in-cluded 
+an 'en-able' sig-nal in-put, which acts as an pause/re- 
+ []
+
+
+Overfull \hbox (24.77348pt too wide) in paragraph at lines 94--95
+\OT1/cmr/m/n/10 the active-low re-set was trig-gered. The asyn-chronic-ity of t
+he clock and re-set sig-nal cre-ates the risk of metastable 
+ []
+
+
+Overfull \hbox (8.55125pt too wide) in paragraph at lines 98--99
+\OT1/cmr/m/n/10 board. Each pos-si-ble state was sim-u-lated, in re-gards to th
+e re-set, the 4 bits, and in the case of the schematic 
+ []
+
+[2] [3] (../counters/rippleUpCounter.v) (../counters/rippleUpCounter_tester.v)
+[4] (../counters/synUpCounter.v) (../counters/synUpCounter_tester.v [5])
+(../counters/johnsonUpCounter.v) [6] (../counters/johnsonUpCounter_tester.v)
+<figures/schem_synUp.png, id=34, 630.355pt x 340.27126pt>
+File: figures/schem_synUp.png Graphic file (type png)
+
+<use figures/schem_synUp.png>
+Package pdftex.def Info: figures/schem_synUp.png used on input line 162.
+(pdftex.def)             Requested size: 352.31625pt x 190.18196pt.
+ [7] (../counters/schematicEntrySynUpCounter.v
+[8 <./figures/schem_synUp.png>] [9])
+<figures/waveforms/rippleUp_wave.png, id=46, 629.35126pt x 391.4625pt>
 File: figures/waveforms/rippleUp_wave.png Graphic file (type png)
 
 <use figures/waveforms/rippleUp_wave.png>
 Package pdftex.def Info: figures/waveforms/rippleUp_wave.png used on input line
- 116.
-(pdftex.def)             Requested size: 469.75502pt x 153.33276pt.
+ 173.
+(pdftex.def)             Requested size: 352.31625pt x 219.14581pt.
 
-<figures/RTLs/rippleUp_RTL.png, id=26, 517.935pt x 521.95pt>
-File: figures/RTLs/rippleUp_RTL.png Graphic file (type png)
-
-<use figures/RTLs/rippleUp_RTL.png>
-Package pdftex.def Info: figures/RTLs/rippleUp_RTL.png used on input line 120.
-(pdftex.def)             Requested size: 352.31625pt x 355.06465pt.
- (../counters/synUpCounter.v)
-(../counters/synUpCounter_tester.v [4] [5 <./figures/waveforms/rippleUp_wave.pn
-g> <./figures/RTLs/rippleUp_RTL.png>]) [6]
-<figures/waveforms/synUp_wave.png, id=39, 625.33624pt x 204.765pt>
+<figures/waveforms/synUp_wave.png, id=47, 625.33624pt x 204.765pt>
 File: figures/waveforms/synUp_wave.png Graphic file (type png)
 
 <use figures/waveforms/synUp_wave.png>
-Package pdftex.def Info: figures/waveforms/synUp_wave.png used on input line 13
-3.
-(pdftex.def)             Requested size: 469.75502pt x 153.8233pt.
+Package pdftex.def Info: figures/waveforms/synUp_wave.png used on input line 18
+0.
+(pdftex.def)             Requested size: 352.31625pt x 115.36748pt.
 
-<figures/RTLs/synUp_RTL.png, id=40, 642.4pt x 482.80376pt>
-File: figures/RTLs/synUp_RTL.png Graphic file (type png)
-
-<use figures/RTLs/synUp_RTL.png>
-Package pdftex.def Info: figures/RTLs/synUp_RTL.png used on input line 137.
-(pdftex.def)             Requested size: 352.31625pt x 264.79146pt.
- (../counters/johnsonUpCounter.v)
-(../counters/johnsonUpCounter_tester.v [7] [8 <./figures/waveforms/synUp_wave.p
-ng> <./figures/RTLs/synUp_RTL.png>]) [9]
-<figures/waveforms/johnson_wave.png, id=52, 627.34375pt x 203.76125pt>
+<figures/waveforms/johnson_wave.png, id=48, 627.34375pt x 203.76125pt>
 File: figures/waveforms/johnson_wave.png Graphic file (type png)
 
 <use figures/waveforms/johnson_wave.png>
 Package pdftex.def Info: figures/waveforms/johnson_wave.png used on input line 
-150.
-(pdftex.def)             Requested size: 469.75502pt x 152.58115pt.
-
-<figures/RTLs/johnson_RTL.png, id=53, 589.20125pt x 257.96375pt>
-File: figures/RTLs/johnson_RTL.png Graphic file (type png)
-
-<use figures/RTLs/johnson_RTL.png>
-Package pdftex.def Info: figures/RTLs/johnson_RTL.png used on input line 154.
-(pdftex.def)             Requested size: 352.31625pt x 154.25198pt.
- [10 <./figures/waveforms/johnson_wave.png> <./figures/RTLs/johnson_RTL.png>]
-<figures/waveforms/schem_synUp_wave.png, id=59, 627.34375pt x 206.7725pt>
+187.
+(pdftex.def)             Requested size: 352.31625pt x 114.43507pt.
+ [10 <./figures/waveforms/rippleUp_wave.png> <./figures/waveforms/synUp_wave.pn
+g>]
+<figures/waveforms/schem_synUp_wave.png, id=54, 627.34375pt x 206.7725pt>
 File: figures/waveforms/schem_synUp_wave.png Graphic file (type png)
 
 <use figures/waveforms/schem_synUp_wave.png>
 Package pdftex.def Info: figures/waveforms/schem_synUp_wave.png used on input l
-ine 165.
-(pdftex.def)             Requested size: 469.75502pt x 154.83604pt.
+ine 194.
+(pdftex.def)             Requested size: 352.31625pt x 116.12624pt.
 
-<figures/RTLs/schem_synUp_RTL.png, id=60, 649.42625pt x 360.34625pt>
+<figures/RTLs/rippleUp_RTL.png, id=55, 517.935pt x 521.95pt>
+File: figures/RTLs/rippleUp_RTL.png Graphic file (type png)
+
+<use figures/RTLs/rippleUp_RTL.png>
+Package pdftex.def Info: figures/RTLs/rippleUp_RTL.png used on input line 202.
+(pdftex.def)             Requested size: 352.31625pt x 355.06465pt.
+ [11 <./figures/waveforms/johnson_wave.png> <./figures/waveforms/schem_synUp_wa
+ve.png>]
+<figures/RTLs/synUp_RTL.png, id=62, 642.4pt x 482.80376pt>
+File: figures/RTLs/synUp_RTL.png Graphic file (type png)
+
+<use figures/RTLs/synUp_RTL.png>
+Package pdftex.def Info: figures/RTLs/synUp_RTL.png used on input line 209.
+(pdftex.def)             Requested size: 352.31625pt x 264.79146pt.
+ [12 <./figures/RTLs/rippleUp_RTL.png>]
+<figures/RTLs/johnson_RTL.png, id=67, 589.20125pt x 257.96375pt>
+File: figures/RTLs/johnson_RTL.png Graphic file (type png)
+
+<use figures/RTLs/johnson_RTL.png>
+Package pdftex.def Info: figures/RTLs/johnson_RTL.png used on input line 216.
+(pdftex.def)             Requested size: 352.31625pt x 154.25198pt.
+
+<figures/RTLs/schem_synUp_RTL.png, id=68, 649.42625pt x 360.34625pt>
 File: figures/RTLs/schem_synUp_RTL.png Graphic file (type png)
 
 <use figures/RTLs/schem_synUp_RTL.png>
-Package pdftex.def Info: figures/RTLs/schem_synUp_RTL.png used on input line 16
-9.
+Package pdftex.def Info: figures/RTLs/schem_synUp_RTL.png used on input line 22
+3.
 (pdftex.def)             Requested size: 352.31625pt x 195.49132pt.
+ [13 <./figures/RTLs/synUp_RTL.png> <./figures/RTLs/johnson_RTL.png>] (../iveri
+log_gtkwave/andOr0.v)
+(../iverilog_gtkwave/andorTop0.v [14 <./figures/RTLs/schem_synUp_RTL.png>])
+(../iverilog_gtkwave/testBench.v)
+<figures/iverilog_gtkwave.png, id=78, 1093.08376pt x 435.6275pt>
+File: figures/iverilog_gtkwave.png Graphic file (type png)
 
+<use figures/iverilog_gtkwave.png>
+Package pdftex.def Info: figures/iverilog_gtkwave.png used on input line 237.
+(pdftex.def)             Requested size: 352.31625pt x 140.40736pt.
+ [15]
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
-(../listPrice/listPrice/main.c [11 <./figures/waveforms/schem_synUp_wave.png> <
-./figures/RTLs/schem_synUp_RTL.png>]) [12] (./lab1.aux) ) 
+(../listPrice/listPrice.c) [16 <./figures/iverilog_gtkwave.png>] (./lab1.aux) )
+ 
 Here is how much of TeX's memory you used:
- 4191 strings out of 493089
- 62146 string characters out of 6134842
- 204301 words of memory out of 5000000
- 7588 multiletter control sequences out of 15000+600000
+ 4322 strings out of 493089
+ 64234 string characters out of 6134842
+ 203541 words of memory out of 5000000
+ 7699 multiletter control sequences out of 15000+600000
  8361 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,52p,1009b,1615s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on lab1.pdf (14 pages, 244901 bytes).
+ 38i,6n,52p,1009b,1555s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on lab1.pdf (18 pages, 353434 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,23 @@
+|readOutBuffer
+empty << Equal0.DB_MAX_OUTPUT_PORT_TYPE
+outputStream << outputStream.DB_MAX_OUTPUT_PORT_TYPE
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+rst => globalReset.IN0
+load => globalReset.IN1
+parallelIn[0] => Mux0.IN15
+parallelIn[1] => Mux0.IN14
+parallelIn[2] => Mux0.IN13
+parallelIn[3] => Mux0.IN12
+parallelIn[4] => Mux0.IN11
+parallelIn[5] => Mux0.IN10
+parallelIn[6] => Mux0.IN9
+parallelIn[7] => Mux0.IN8
+
+
