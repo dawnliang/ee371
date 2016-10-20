@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1476745305 source:/Users/dawnliang/Documents/school/ee371/lab1/c_project/listPrice.c
+	<stdio.h>
+
+1476745075 source:/Users/dawnliang/Documents/school/ee371/lab1/c_project/listPrice/main.c
+	<stdio.h>
+	<stdlib.h>
+

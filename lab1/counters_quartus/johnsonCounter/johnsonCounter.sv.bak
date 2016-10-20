@@ -1,0 +1,51 @@
+module johnsonUpCounter(out, clk, rst);
+	output [3:0] out;
+	input clk, rst;
+	reg [3:0] temp; 
+	
+	always_ff@(negedge rst or posedge clk) begin
+		if (rst == 0) begin
+			temp <= 4'b0000;
+		end else if (clk == 1'b1) begin
+			temp <= {~temp[0], temp[3:1]}; // right shift and negating most signf bit
+		end	
+	end
+
+	assign out = temp; 
+endmodule
+
+module johnsonUpCounter_testbench;
+	wire [3:0] out;
+	reg clk, rst;
+
+	johnsonUpCounter dut(.out, .clk, .rst);
+
+	parameter PERIOD = 100; // period = length of clock
+	initial begin
+		clk <= 0;
+		forever #(PERIOD/2) clk = ~clk;
+	end
+	
+	initial begin
+		rst=0;   @(posedge clk);
+		rst=1;   @(posedge clk);
+				 @(posedge clk);
+				 @(posedge clk);
+				 @(posedge clk);
+				 @(posedge clk);
+				 @(posedge clk);
+				 @(posedge clk);
+				 @(posedge clk);
+				 @(posedge clk);
+		         @(posedge clk);	
+				 @(posedge clk);
+				 @(posedge clk);
+		         @(posedge clk);	
+				 @(posedge clk);
+				 @(posedge clk);
+		rst=0;   @(posedge clk);	
+				 @(posedge clk);	
+				 @(posedge clk);	
+		$stop();
+	end	
+endmodule

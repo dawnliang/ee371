@@ -1,0 +1,59 @@
+cd C:\Users\Admin\Desktop\pk\1 rippleUp
+iverilog -o rup rippleUpCounter_testbench.v
+vvp rup
+gtkwave rup.vcd 
+
+//-----------------------------------------------------------
+cd C:\Users\Admin\Desktop\pk\2 synup
+iverilog -o syn synUpCounter_testbench.v
+vvp syn
+gtkwave syn.vcd 
+
+//-----------------------------------------------------------
+cd C:\Users\Admin\Desktop\pk\3 johnsonup
+iverilog -o jhn johnsonUpCounter_testbench.v
+vvp jhn
+gtkwave jhn.vcd 
+
+//-----------------------------------------------------------
+cd C:\Users\Admin\Desktop\pk\4 schemsyn
+iverilog -o schm schmSynUpCounter_testbench.v
+vvp schm
+gtkwave schm.vcd 
+
+//-----------------------------------------------------------
+cd C:\Users\Admin\Desktop\pk\5 andOrTop
+iverilog -o andorTop0 andorTop0.v
+vvp andorTop0
+gtkwave andor0.vcd
+
+//-----------------------------------------------------------
+For converting a schmatic capture file in Quartus 
+into a verilog file:
+Open the shematic capture file in Quartus then
+go to File > Create/Update > Create HDL Design File.
+This produes a "______.v" file, where _____ is the name of your
+original schmatic capture file.
+ 
+Then,
+add this newly created _____.v to the project by:
+Project > Add/Remove Files in Project > then browsing and finding the _____.v file to add to your project.
+Once you added the _____.v file, remove the original schematic
+capture from your project (this avoids file name conflicts). 
+
+The _____.v file can now be called from your overall module. 
+And the _____.v file can now also be loaded onto the DE1_SoC board.
+
+Also, now that the schmatic capture file has been turned into 
+a _____.v file, you can write a testbench for the _____.v file
+(using regular testbench conventions such as dut).
+Just make you use the port names defined within the _____.v file
+when using _____.v module as the dut within the testbench.  
+
+
+
+
+
+
+ 
+

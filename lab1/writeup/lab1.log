@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 OCT 2016 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 OCT 2016 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,29 +23,106 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-\lst@mode=\count87
-\lst@gtempboxa=\box26
-\lst@token=\toks15
-\lst@length=\count88
-\lst@currlwidth=\dimen103
-\lst@column=\count89
-\lst@pos=\count90
-\lst@lostspace=\dimen104
-\lst@width=\dimen105
-\lst@newlines=\count91
-\lst@lineno=\count92
-\lst@maxwidth=\dimen106
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks16
+\footnotemargin=\dimen111
+\c@pp@next@reset=\count90
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+\CenteringLeftskip=\skip43
+\RaggedLeftLeftskip=\skip44
+\RaggedRightLeftskip=\skip45
+\CenteringRightskip=\skip46
+\RaggedLeftRightskip=\skip47
+\RaggedRightRightskip=\skip48
+\CenteringParfillskip=\skip49
+\RaggedLeftParfillskip=\skip50
+\RaggedRightParfillskip=\skip51
+\JustifyingParfillskip=\skip52
+\CenteringParindent=\skip53
+\RaggedLeftParindent=\skip54
+\RaggedRightParindent=\skip55
+\JustifyingParindent=\skip56
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box26
+\beforetitleunit=\skip57
+\aftertitleunit=\skip58
+\ttl@plus=\dimen112
+\ttl@minus=\dimen113
+\ttl@toksa=\toks17
+\titlewidth=\dimen114
+\titlewidthlast=\dimen115
+\titlewidthfirst=\dimen116
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count91
+\lst@gtempboxa=\box27
+\lst@token=\toks18
+\lst@length=\count92
+\lst@currlwidth=\dimen117
+\lst@column=\count93
+\lst@pos=\count94
+\lst@lostspace=\dimen118
+\lst@width=\dimen119
+\lst@newlines=\count95
+\lst@lineno=\count96
+\lst@maxwidth=\dimen120
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count93
-\lst@skipnumbers=\count94
-\lst@framebox=\box27
+\c@lstnumber=\count97
+\lst@skipnumbers=\count98
+\lst@framebox=\box28
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2014/09/06 1.5e listings configuration
@@ -69,7 +146,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count95
+\Gread@gobject=\count99
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -85,90 +162,24 @@ File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 94.
 )
-\Gin@req@height=\dimen107
-\Gin@req@width=\dimen108
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box28
-\beforetitleunit=\skip43
-\aftertitleunit=\skip44
-\ttl@plus=\dimen109
-\ttl@minus=\dimen110
-\ttl@toksa=\toks16
-\titlewidth=\dimen111
-\titlewidthlast=\dimen112
-\titlewidthfirst=\dimen113
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count96
-\float@exts=\toks17
+\c@float@type=\count100
+\float@exts=\toks19
 \float@box=\box29
-\@float@everytoks=\toks18
+\@float@everytoks=\toks20
 \@floatcapt=\box30
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count97
-\Gm@cntv=\count98
-\c@Gm@tempcnt=\count99
-\Gm@bindingoffset=\dimen114
-\Gm@wd@mp=\dimen115
-\Gm@odd@mp=\dimen116
-\Gm@even@mp=\dimen117
-\Gm@layoutwidth=\dimen118
-\Gm@layoutheight=\dimen119
-\Gm@layouthoffset=\dimen120
-\Gm@layoutvoffset=\dimen121
-\Gm@dimlist=\toks19
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/ragged2e.sty
-Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/everysel.sty
-Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/footmisc/footmisc.sty
-Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks20
-\footnotemargin=\dimen122
-\c@pp@next@reset=\count100
-Package footmisc Info: Declaring symbol style bringhurst on input line 855.
-Package footmisc Info: Declaring symbol style chicago on input line 863.
-Package footmisc Info: Declaring symbol style wiley on input line 872.
-Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
-
-Package footmisc Info: Declaring symbol style lamport* on input line 903.
-Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
-.
-)
-\CenteringLeftskip=\skip45
-\RaggedLeftLeftskip=\skip46
-\RaggedRightLeftskip=\skip47
-\CenteringRightskip=\skip48
-\RaggedLeftRightskip=\skip49
-\RaggedRightRightskip=\skip50
-\CenteringParfillskip=\skip51
-\RaggedLeftParfillskip=\skip52
-\RaggedRightParfillskip=\skip53
-\JustifyingParfillskip=\skip54
-\CenteringParindent=\skip55
-\RaggedLeftParindent=\skip56
-\RaggedRightParindent=\skip57
-\JustifyingParindent=\skip58
+(/usr/local/texlive/2015/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen123
+\WF@size=\dimen124
+\c@WF@wrappedlines=\count101
+\WF@box=\box31
+\WF@everypar=\toks21
+Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
@@ -182,32 +193,74 @@ File: lstlang3.sty 2014/09/06 1.5e listings language file
 (./lab1.aux)
 \openout1 = `lab1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-\c@lstlisting=\count101
- (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 43.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package ragged2e Info: ABD: executing \RaggedRight on input line 43.
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 43.
+\c@lstlisting=\count102
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
-\scratchdimen=\dimen123
-\scratchbox=\box31
-\nofMPsegments=\count103
-\nofMParguments=\count104
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count105
-\MPscratchDim=\dimen124
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count103
+\scratchdimen=\dimen125
+\scratchbox=\box32
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen126
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks23
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -252,195 +305,339 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=650.43001pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 54.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 54.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 54.
 
-Package ragged2e Info: ABD: executing \RaggedRight on input line 39.
-ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 39.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 41.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 41.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 41.
- [1
+[1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./lab1
-.toc
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 6.
+(Font)              <7> on input line 59.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 6.
-)
+(Font)              <5> on input line 59.
+
+[2]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+ (./lab1.toc)
 \tf@toc=\write3
 \openout3 = `lab1.toc'.
 
- [2]
-Overfull \hbox (12.99573pt too wide) in paragraph at lines 58--59
-\OT1/cmr/m/n/10 low re-set. The first three were di-rectly writ-ten in Ver-ilog
-, the fourth had to be built us-ing Quar-tus' schematic 
+ [3]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+
+Overfull \hbox (0.27133pt too wide) in paragraph at lines 78--79
+[] [][] \OT1/ptm/m/n/10 We built four dif-fer-ent types of coun-ters: a ripple-
+up counter, two syn-chronous up coun-ters, and a John-son counter, 
  []
 
-(../counters/DFlipFlop.v) [1]
-Overfull \hbox (14.91243pt too wide) in paragraph at lines 88--89
-\OT1/cmr/m/n/10 coun-ters, built with Quar-tus' schematic en-try, we in-cluded 
-an 'en-able' sig-nal in-put, which acts as an pause/re- 
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 84.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+(../counters/DFlipFlop.v [1])
+<figures/synch_k_maps.png, id=19, 474.77374pt x 484.81125pt>
+File: figures/synch_k_maps.png Graphic file (type png)
+
+<use figures/synch_k_maps.png>
+Package pdftex.def Info: figures/synch_k_maps.png used on input line 88.
+(pdftex.def)             Requested size: 187.89914pt x 191.87192pt.
+ [2 <./figures/synch_k_maps.png>]
+Overfull \hbox (3.11967pt too wide) in paragraph at lines 121--122
+\OT1/ptm/m/n/10 should cy-cle back to their ini-tial state af-ter reach-ing the
+ max-i-mum state. For the schematic en-try syn-chronous counter, 
+ []
+
+[3]
+Overfull \hbox (0.47984pt too wide) in paragraph at lines 144--145
+[] [][] \OT1/ptm/m/n/10 The list-Price cal-cu-la-tor out-putted the cor-rect pr
+ices when pre-sented with ex-pected pos-i-tive nu-mer-i-cal in-puts. When 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 158.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 158.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+
+Overfull \hbox (0.67043pt too wide) in paragraph at lines 176--177
+[]\OT1/ptm/m/n/10 SA0: The least sig-nif-i-cant bit of the out-put will never c
+hange from 0 and the rest of the counter will stop count- 
  []
 
 
-Overfull \hbox (24.77348pt too wide) in paragraph at lines 94--95
-\OT1/cmr/m/n/10 the active-low re-set was trig-gered. The asyn-chronic-ity of t
-he clock and re-set sig-nal cre-ates the risk of metastable 
+Overfull \hbox (0.67043pt too wide) in paragraph at lines 177--178
+[]\OT1/ptm/m/n/10 SA1: The least sig-nif-i-cant bit of the out-put will never c
+hange from 1 and the rest of the counter will stop count- 
  []
 
-
-Overfull \hbox (8.55125pt too wide) in paragraph at lines 98--99
-\OT1/cmr/m/n/10 board. Each pos-si-ble state was sim-u-lated, in re-gards to th
-e re-set, the 4 bits, and in the case of the schematic 
+[4] [5]
+Overfull \hbox (2.14117pt too wide) in paragraph at lines 261--262
+[]\OT1/ptm/m/n/10 SA0: D3 will al-ways be high, but there are no fol-low-ing co
+un-ters to be af-fected. Q0, Q1, and Q2 will countinue 
  []
 
-[2] [3] (../counters/rippleUpCounter.v) (../counters/rippleUpCounter_tester.v)
-[4] (../counters/synUpCounter.v) (../counters/synUpCounter_tester.v [5])
-(../counters/johnsonUpCounter.v) [6] (../counters/johnsonUpCounter_tester.v)
-<figures/schem_synUp.png, id=34, 630.355pt x 340.27126pt>
-File: figures/schem_synUp.png Graphic file (type png)
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+[6]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+ <figures/gate_diagrams/rippleUp_gate.jpg, id=39, 1212.53pt x 909.3975pt>
+File: figures/gate_diagrams/rippleUp_gate.jpg Graphic file (type jpg)
 
-<use figures/schem_synUp.png>
-Package pdftex.def Info: figures/schem_synUp.png used on input line 162.
-(pdftex.def)             Requested size: 352.31625pt x 190.18196pt.
- [7] (../counters/schematicEntrySynUpCounter.v
-[8 <./figures/schem_synUp.png>] [9])
-<figures/waveforms/rippleUp_wave.png, id=46, 629.35126pt x 391.4625pt>
+<use figures/gate_diagrams/rippleUp_gate.jpg>
+Package pdftex.def Info: figures/gate_diagrams/rippleUp_gate.jpg used on input 
+line 324.
+(pdftex.def)             Requested size: 234.8775pt x 176.15926pt.
+ [7]
+<figures/gate_diagrams/synchUp_gate.jpg, id=43, 681.54625pt x 870.25125pt>
+File: figures/gate_diagrams/synchUp_gate.jpg Graphic file (type jpg)
+
+<use figures/gate_diagrams/synchUp_gate.jpg>
+Package pdftex.def Info: figures/gate_diagrams/synchUp_gate.jpg used on input l
+ine 330.
+(pdftex.def)             Requested size: 234.8775pt x 299.90503pt.
+
+<figures/gate_diagrams/johnson_gate.jpg, id=44, 676.5275pt x 715.67375pt>
+File: figures/gate_diagrams/johnson_gate.jpg Graphic file (type jpg)
+
+<use figures/gate_diagrams/johnson_gate.jpg>
+Package pdftex.def Info: figures/gate_diagrams/johnson_gate.jpg used on input l
+ine 336.
+(pdftex.def)             Requested size: 234.8775pt x 248.4693pt.
+ [8 <./figures/gate_diagrams/rippleUp_gate.jpg> <./figures/gate_diagrams/synchU
+p_gate.jpg>]
+(../counters/rippleUpCounter.sv) (../counters/rippleUpCounter_tester.v [9 <./fi
+gures/gate_diagrams/johnson_gate.jpg>]) [10] (../counters/synUpCounter.sv)
+(../counters/synUpCounter_tester.v [11]) (../counters/johnsonCounter.sv
+[12]) (../counters/johnsonUpCounter_tester.v [13])
+<figures/gate_diagrams/schem_synUp.png, id=64, 797.98125pt x 375.4025pt>
+File: figures/gate_diagrams/schem_synUp.png Graphic file (type png)
+
+<use figures/gate_diagrams/schem_synUp.png>
+Package pdftex.def Info: figures/gate_diagrams/schem_synUp.png used on input li
+ne 358.
+(pdftex.def)             Requested size: 352.31625pt x 165.74469pt.
+ (../counters/schem_synUp.v [14 <./figures/gate_diagrams/schem_synUp.png>] [15]
+ [16])
+(../counters/schem_synUp_tester.v [17])
+<figures/RTLs/rippleUp_RTL.png, id=79, 517.935pt x 521.95pt>
+File: figures/RTLs/rippleUp_RTL.png Graphic file (type png)
+
+<use figures/RTLs/rippleUp_RTL.png>
+Package pdftex.def Info: figures/RTLs/rippleUp_RTL.png used on input line 371.
+(pdftex.def)             Requested size: 352.31625pt x 355.06465pt.
+ [18]
+<figures/RTLs/synUp_RTL.png, id=83, 642.4pt x 482.80376pt>
+File: figures/RTLs/synUp_RTL.png Graphic file (type png)
+
+<use figures/RTLs/synUp_RTL.png>
+Package pdftex.def Info: figures/RTLs/synUp_RTL.png used on input line 378.
+(pdftex.def)             Requested size: 352.31625pt x 264.79146pt.
+ [19 <./figures/RTLs/rippleUp_RTL.png>]
+<figures/RTLs/johnson_RTL.png, id=88, 589.20125pt x 257.96375pt>
+File: figures/RTLs/johnson_RTL.png Graphic file (type png)
+
+<use figures/RTLs/johnson_RTL.png>
+Package pdftex.def Info: figures/RTLs/johnson_RTL.png used on input line 385.
+(pdftex.def)             Requested size: 352.31625pt x 154.25198pt.
+
+<figures/RTLs/schem_synUp_RTL.png, id=89, 1150.2975pt x 486.81876pt>
+File: figures/RTLs/schem_synUp_RTL.png Graphic file (type png)
+
+<use figures/RTLs/schem_synUp_RTL.png>
+Package pdftex.def Info: figures/RTLs/schem_synUp_RTL.png used on input line 39
+2.
+(pdftex.def)             Requested size: 352.31625pt x 149.09976pt.
+ [20 <./figures/RTLs/synUp_RTL.png> <./figures/RTLs/johnson_RTL.png>]
+<figures/waveforms/rippleUp_wave.png, id=95, 629.35126pt x 391.4625pt>
 File: figures/waveforms/rippleUp_wave.png Graphic file (type png)
 
 <use figures/waveforms/rippleUp_wave.png>
 Package pdftex.def Info: figures/waveforms/rippleUp_wave.png used on input line
- 173.
+ 403.
 (pdftex.def)             Requested size: 352.31625pt x 219.14581pt.
 
-<figures/waveforms/synUp_wave.png, id=47, 625.33624pt x 204.765pt>
+<figures/waveforms/synUp_wave.png, id=96, 628.3475pt x 384.43625pt>
 File: figures/waveforms/synUp_wave.png Graphic file (type png)
 
 <use figures/waveforms/synUp_wave.png>
-Package pdftex.def Info: figures/waveforms/synUp_wave.png used on input line 18
+Package pdftex.def Info: figures/waveforms/synUp_wave.png used on input line 41
 0.
-(pdftex.def)             Requested size: 352.31625pt x 115.36748pt.
-
-<figures/waveforms/johnson_wave.png, id=48, 627.34375pt x 203.76125pt>
+(pdftex.def)             Requested size: 352.31625pt x 215.55266pt.
+ [21 <./figures/RTLs/schem_synUp_RTL.png (PNG copy)> <./figures/waveforms/rippl
+eUp_wave.png>]
+<figures/waveforms/johnson_wave.png, id=101, 626.34pt x 385.44pt>
 File: figures/waveforms/johnson_wave.png Graphic file (type png)
 
 <use figures/waveforms/johnson_wave.png>
 Package pdftex.def Info: figures/waveforms/johnson_wave.png used on input line 
-187.
-(pdftex.def)             Requested size: 352.31625pt x 114.43507pt.
- [10 <./figures/waveforms/rippleUp_wave.png> <./figures/waveforms/synUp_wave.pn
-g>]
-<figures/waveforms/schem_synUp_wave.png, id=54, 627.34375pt x 206.7725pt>
+417.
+(pdftex.def)             Requested size: 352.31625pt x 216.81534pt.
+
+<figures/waveforms/schem_synUp_wave.png, id=102, 626.34pt x 385.44pt>
 File: figures/waveforms/schem_synUp_wave.png Graphic file (type png)
 
 <use figures/waveforms/schem_synUp_wave.png>
 Package pdftex.def Info: figures/waveforms/schem_synUp_wave.png used on input l
-ine 194.
-(pdftex.def)             Requested size: 352.31625pt x 116.12624pt.
+ine 424.
+(pdftex.def)             Requested size: 352.31625pt x 216.81534pt.
+ [22 <./figures/waveforms/synUp_wave.png> <./figures/waveforms/johnson_wave.png
+>]
+<figures/stp/rippleUp_stp.png, id=109, 1033.61156pt x 746.79pt>
+File: figures/stp/rippleUp_stp.png Graphic file (type png)
 
-<figures/RTLs/rippleUp_RTL.png, id=55, 517.935pt x 521.95pt>
-File: figures/RTLs/rippleUp_RTL.png Graphic file (type png)
+<use figures/stp/rippleUp_stp.png>
+Package pdftex.def Info: figures/stp/rippleUp_stp.png used on input line 436.
+(pdftex.def)             Requested size: 352.31625pt x 254.54335pt.
 
-<use figures/RTLs/rippleUp_RTL.png>
-Package pdftex.def Info: figures/RTLs/rippleUp_RTL.png used on input line 202.
-(pdftex.def)             Requested size: 352.31625pt x 355.06465pt.
- [11 <./figures/waveforms/johnson_wave.png> <./figures/waveforms/schem_synUp_wa
-ve.png>]
-<figures/RTLs/synUp_RTL.png, id=62, 642.4pt x 482.80376pt>
-File: figures/RTLs/synUp_RTL.png Graphic file (type png)
+<figures/stp/synUp_stp.png, id=110, 827.4915pt x 600.44325pt>
+File: figures/stp/synUp_stp.png Graphic file (type png)
 
-<use figures/RTLs/synUp_RTL.png>
-Package pdftex.def Info: figures/RTLs/synUp_RTL.png used on input line 209.
-(pdftex.def)             Requested size: 352.31625pt x 264.79146pt.
- [12 <./figures/RTLs/rippleUp_RTL.png>]
-<figures/RTLs/johnson_RTL.png, id=67, 589.20125pt x 257.96375pt>
-File: figures/RTLs/johnson_RTL.png Graphic file (type png)
+<use figures/stp/synUp_stp.png>
+Package pdftex.def Info: figures/stp/synUp_stp.png used on input line 444.
+(pdftex.def)             Requested size: 352.31625pt x 255.64769pt.
+ [23 <./figures/waveforms/schem_synUp_wave.png> <./figures/stp/rippleUp_stp.png
+>]
+<figures/stp/johnson_stp.png, id=116, 828.09375pt x 601.64775pt>
+File: figures/stp/johnson_stp.png Graphic file (type png)
 
-<use figures/RTLs/johnson_RTL.png>
-Package pdftex.def Info: figures/RTLs/johnson_RTL.png used on input line 216.
-(pdftex.def)             Requested size: 352.31625pt x 154.25198pt.
+<use figures/stp/johnson_stp.png>
+Package pdftex.def Info: figures/stp/johnson_stp.png used on input line 452.
+(pdftex.def)             Requested size: 352.31625pt x 255.97691pt.
 
-<figures/RTLs/schem_synUp_RTL.png, id=68, 649.42625pt x 360.34625pt>
-File: figures/RTLs/schem_synUp_RTL.png Graphic file (type png)
+<figures/stp/schem_synUp_stp.png, id=117, 839.135pt x 594.22pt>
+File: figures/stp/schem_synUp_stp.png Graphic file (type png)
 
-<use figures/RTLs/schem_synUp_RTL.png>
-Package pdftex.def Info: figures/RTLs/schem_synUp_RTL.png used on input line 22
-3.
-(pdftex.def)             Requested size: 352.31625pt x 195.49132pt.
- [13 <./figures/RTLs/synUp_RTL.png> <./figures/RTLs/johnson_RTL.png>] (../iveri
-log_gtkwave/andOr0.v)
-(../iverilog_gtkwave/andorTop0.v [14 <./figures/RTLs/schem_synUp_RTL.png>])
+<use figures/stp/schem_synUp_stp.png>
+Package pdftex.def Info: figures/stp/schem_synUp_stp.png used on input line 460
+.
+(pdftex.def)             Requested size: 352.31625pt x 249.48909pt.
+ [24 <./figures/stp/synUp_stp.png> <./figures/stp/johnson_stp.png>] (../iverilo
+g_gtkwave/andOr0.v)
+(../iverilog_gtkwave/andorTop0.v [25 <./figures/stp/schem_synUp_stp.png>])
 (../iverilog_gtkwave/testBench.v)
-<figures/iverilog_gtkwave.png, id=78, 1093.08376pt x 435.6275pt>
+<figures/iverilog_gtkwave.png, id=127, 1093.08376pt x 435.6275pt>
 File: figures/iverilog_gtkwave.png Graphic file (type png)
 
 <use figures/iverilog_gtkwave.png>
-Package pdftex.def Info: figures/iverilog_gtkwave.png used on input line 237.
+Package pdftex.def Info: figures/iverilog_gtkwave.png used on input line 475.
 (pdftex.def)             Requested size: 352.31625pt x 140.40736pt.
- [15]
+ [26]
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
-(../listPrice/listPrice.c) [16 <./figures/iverilog_gtkwave.png>] (./lab1.aux) )
- 
+(../c_project/listPrice/listPrice.c)
+<figures/listPrice_results.png, id=131, 574.145pt x 369.38pt>
+File: figures/listPrice_results.png Graphic file (type png)
+
+<use figures/listPrice_results.png>
+Package pdftex.def Info: figures/listPrice_results.png used on input line 487.
+(pdftex.def)             Requested size: 352.31625pt x 226.66853pt.
+ [27 <./figures/iverilog_gtkwave.png>]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+
+[28 <./figures/listPrice_results.png>]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+ [29] (./lab1.aux) ) 
 Here is how much of TeX's memory you used:
- 4322 strings out of 493089
- 64234 string characters out of 6134842
- 203541 words of memory out of 5000000
- 7699 multiletter control sequences out of 15000+600000
- 8361 words of font info for 30 fonts, out of 8000000 for 9000
+ 4553 strings out of 493089
+ 68553 string characters out of 6134842
+ 205823 words of memory out of 5000000
+ 7892 multiletter control sequences out of 15000+600000
+ 19222 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,52p,1009b,1555s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on lab1.pdf (18 pages, 353434 bytes).
+ 37i,8n,52p,1107b,1730s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r
+.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on lab1.pdf (32 pages, 1377759 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 171 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

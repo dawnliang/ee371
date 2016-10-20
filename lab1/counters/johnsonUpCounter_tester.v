@@ -1,41 +1,64 @@
 /*
 	Testing module for johnson up counter
 
-	Author: Jun Park
+	Author: William Li, Dawn Liang, Jun Park
 	Date: 16 Oct 2016
 */
+`include "johnsonUpCounter.v"
+
 module johnsonUpCounter_testbench;
-	logic [3:0] out;
-	logic clk, rst;
+	wire [3:0] out;
+	reg clk, rst;
 
-	johnsonUpCounter dut(.out, .clk, .rst);
+	johnsonUpCounter dut(.out(out), .clk(clk), .rst(rst));
+	
+	//-------------------------------------------------------
+   parameter delay = 4; 
+   
+   initial begin
+     clk = 0; 
+     rst = 0; 
+   end 
+      
+   always begin 
+     #delay clk =  ! clk; 
+   end  
 
-	parameter PERIOD = 100; // period = length of clock
-	initial begin
-		clk <= 0;
-		forever #(PERIOD/2) clk = ~clk;
+	//-------------------------------------------------------
+	initial // Response
+	begin
+		$display("\t\t out\t clk\t reset\t Time ");
+		$monitor("\t\t %b\t  %b\t  %b\t", out, clk, rst, $time);
 	end
 	
+	
+	
+	initial // Stimulus
+	begin
+		rst = 0; #delay;
+		rst = 1; #delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		$finish; // finish simulation
+	end 
+	
+	// file for gtkwave
 	initial begin
-		rst=0; @(posedge clk);
-		rst=1; @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-		       @(posedge clk);	
-				 @(posedge clk);
-				 @(posedge clk);
-		       @(posedge clk);	
-				 @(posedge clk);
-				 @(posedge clk);
-		rst=0; @(posedge clk);	
-				 @(posedge clk);	
-				 @(posedge clk);	
-		$stop();
-	end	
+		// these two files support gtkwave and are required
+		$dumpfile("jhn.vcd");
+		$dumpvars;
+	end
 endmodule

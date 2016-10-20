@@ -1,0 +1,74 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_00000000007f4990 .scope module, "testBench" "testBench" 2 4;
+ .timescale 0 0;
+v00000000007f7940_0 .net "X", 1 0, v00000000007f7580_0;  1 drivers
+v00000000007f79e0_0 .net "XandY", 1 0, L_00000000007edbd0;  1 drivers
+v00000000007f7a80_0 .net "XorY", 1 0, L_00000000007f15e0;  1 drivers
+v00000000007f7b20_0 .net "Y", 1 0, v00000000007f7620_0;  1 drivers
+S_00000000007f4b10 .scope module, "aTester" "Tester" 2 14, 2 26 0, S_00000000007f4990;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 2 "xOut"
+    .port_info 1 /OUTPUT 2 "yOut"
+    .port_info 2 /INPUT 2 "XandYin"
+    .port_info 3 /INPUT 2 "XorYin"
+P_000000000076e650 .param/l "stimDelay" 0 2 32, +C4<00000000000000000000000000010100>;
+v00000000007f7440_0 .net "XandYin", 1 0, L_00000000007edbd0;  alias, 1 drivers
+v00000000007f74e0_0 .net "XorYin", 1 0, L_00000000007f15e0;  alias, 1 drivers
+v00000000007f7580_0 .var "xOut", 1 0;
+v00000000007f7620_0 .var "yOut", 1 0;
+S_00000000007ec490 .scope module, "myAndOr" "AndOr" 2 11, 3 4 0, S_00000000007f4990;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 2 "AandB"
+    .port_info 1 /OUTPUT 2 "AorB"
+    .port_info 2 /INPUT 2 "A"
+    .port_info 3 /INPUT 2 "B"
+L_00000000007edbd0 .functor AND 2, v00000000007f7580_0, v00000000007f7620_0, C4<11>, C4<11>;
+L_00000000007f15e0 .functor OR 2, v00000000007f7580_0, v00000000007f7620_0, C4<00>, C4<00>;
+v00000000007f76c0_0 .net "A", 1 0, v00000000007f7580_0;  alias, 1 drivers
+v00000000007f7760_0 .net "AandB", 1 0, L_00000000007edbd0;  alias, 1 drivers
+v00000000007f7800_0 .net "AorB", 1 0, L_00000000007f15e0;  alias, 1 drivers
+v00000000007f78a0_0 .net "B", 1 0, v00000000007f7620_0;  alias, 1 drivers
+    .scope S_00000000007f4b10;
+T_0 ;
+    %vpi_call 2 36 "$display", "\011\011 xOut yOut \011 XandYin XorYin \011 Time " {0 0 0};
+    %vpi_call 2 37 "$monitor", "\011\011 %b\011 %b \011 %b \011 %b", v00000000007f7580_0, v00000000007f7620_0, v00000000007f7440_0, v00000000007f74e0_0, $time {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_00000000007f4b10;
+T_1 ;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v00000000007f7580_0, 0, 2;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v00000000007f7620_0, 0, 2;
+    %delay 20, 0;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v00000000007f7580_0, 0, 2;
+    %delay 20, 0;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v00000000007f7620_0, 0, 2;
+    %delay 20, 0;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v00000000007f7580_0, 0, 2;
+    %delay 40, 0;
+    %vpi_call 2 47 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_00000000007f4990;
+T_2 ;
+    %vpi_call 2 21 "$dumpfile", "andor0.vcd" {0 0 0};
+    %vpi_call 2 22 "$dumpvars", 32'sb00000000000000000000000000000001, S_00000000007ec490 {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "andorTop0.v";
+    "./andOr0.v";

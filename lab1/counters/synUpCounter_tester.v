@@ -1,47 +1,56 @@
 /*
-	4-bit synchronous up counter tester
+	Testing module for synchronous counter
 
 	Authors: William Li, Dawn Liang, Jun Park
 	Date: 16 Oct 2016
 */
-module synUpCounter_testbench;
-	// declare variables
-	logic [3:0] out;
-	logic clk, rst;
+`include "synUpCounter.v"
 
-	// declare module
-	synUpCounter dut(.out, .clk, .rst);
+module synUpCounter_testbench;
+	wire [3:0] out;
+	reg clk, rst;
+
+	synUpCounter dut(.out(out), .clk(clk), .rst(rst));
 	
-	// test states
-	parameter PERIOD = 100; // period = length of clock
-	initial begin
-		clk <= 0;
-		forever #(PERIOD/2) clk = ~clk;
+	//-------------------------------------------------------
+   parameter delay = 4; 
+   
+   initial begin
+     clk = 0; 
+     rst = 0; 
+   end 
+      
+   always begin 
+     #delay clk =  ! clk; 
+   end  
+
+	//-------------------------------------------------------
+	initial // Response
+	begin
+		$display("\t\t out\t clk\t reset\t Time ");
+		$monitor("\t\t %b\t  %b\t  %b\t", out, clk, rst, $time);
 	end
 	
+	
+	
+	initial // Stimulus
+	begin
+		rst = 0; #delay;
+		rst = 1; #delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		#delay;
+		$finish; // finish simulation
+	end 
+	
+	// file for gtkwave
 	initial begin
-		rst=0; @(posedge clk);
-		rst=1; @(posedge clk);
-				 @(posedge clk);
-		  		 @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-		  		 @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-		  		 @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-		  		 @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-		rst=0; @(posedge clk);
-			    @(posedge clk);
-				 @(posedge clk);
-				 @(posedge clk);
-		$stop();
+		// these two files support gtkwave and are required
+		$dumpfile("syn.vcd");
+		$dumpvars;
 	end
 endmodule

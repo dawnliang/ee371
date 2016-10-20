@@ -1,0 +1,52 @@
+|shematicEntrySynUpCounter
+rst => SYNTHESIZED_WIRE_14.ACLR
+rst => SYNTHESIZED_WIRE_15.ACLR
+rst => SYNTHESIZED_WIRE_17.ACLR
+rst => SYNTHESIZED_WIRE_19.ACLR
+clk => clk.IN1
+enable => SYNTHESIZED_WIRE_16.IN1
+enable => SYNTHESIZED_WIRE_14.ENA
+Cout << Cout.DB_MAX_OUTPUT_PORT_TYPE
+Q0 << SYNTHESIZED_WIRE_14.DB_MAX_OUTPUT_PORT_TYPE
+Q1 << SYNTHESIZED_WIRE_15.DB_MAX_OUTPUT_PORT_TYPE
+Q2 << SYNTHESIZED_WIRE_17.DB_MAX_OUTPUT_PORT_TYPE
+Q3 << SYNTHESIZED_WIRE_19.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shematicEntrySynUpCounter|clkDivider:b2v_inst12
+clk => clk_out~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+clk => counter[24].CLK
+clk => counter[25].CLK
+clk => counter[26].CLK
+clk => counter[27].CLK
+clk => counter[28].CLK
+clk => counter[29].CLK
+clk => counter[30].CLK
+clk => counter[31].CLK
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

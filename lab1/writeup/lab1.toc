@@ -1,50 +1,113 @@
+\contentsline {paragraph}{}{}
+\contentsline {paragraph}{}{}
 \contentsline {section}{\numberline {1}Abstract}{1}
 \contentsline {paragraph}{}{1}
 \contentsline {section}{\numberline {2}Introduction}{1}
 \contentsline {paragraph}{}{1}
 \contentsline {section}{\numberline {3}Discussion}{1}
 \contentsline {subsection}{\numberline {3.1}Design}{1}
-\contentsline {paragraph}{Design Specification}{1}
+\contentsline {subsubsection}{\numberline {3.1.1}Design Specification}{1}
 \contentsline {paragraph}{}{1}
-\contentsline {paragraph}{Design Procedure}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {subsubsection}{\numberline {3.1.2}Design Procedure}{1}
+\contentsline {paragraph}{}{1}
 \contentsline {paragraph}{}{2}
 \contentsline {paragraph}{}{2}
 \contentsline {paragraph}{}{2}
 \contentsline {paragraph}{}{2}
-\contentsline {paragraph}{System Description}{2}
-\contentsline {paragraph}{}{2}
-\contentsline {subsection}{\numberline {3.2}Test}{2}
-\contentsline {paragraph}{Test Plan}{2}
-\contentsline {paragraph}{}{2}
-\contentsline {paragraph}{Test Specification}{2}
-\contentsline {paragraph}{}{2}
-\contentsline {paragraph}{Test Cases}{2}
+\contentsline {subsubsection}{\numberline {3.1.3}System Description}{2}
 \contentsline {paragraph}{}{2}
 \contentsline {paragraph}{}{2}
+\contentsline {subsubsection}{\numberline {3.1.4}Software Implementation}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {subsubsection}{\numberline {3.1.5}Hardware Implementation}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {subsection}{\numberline {3.2}Test}{3}
+\contentsline {subsubsection}{\numberline {3.2.1}Test Plan}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {subsubsection}{\numberline {3.2.2}Test Specification}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {subsubsection}{\numberline {3.2.3}Test Cases}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
 \contentsline {section}{\numberline {4}Results}{3}
 \contentsline {paragraph}{}{3}
 \contentsline {paragraph}{}{3}
-\contentsline {paragraph}{}{3}
-\contentsline {section}{\numberline {5}Analysis of Errors}{3}
-\contentsline {paragraph}{}{3}
-\contentsline {paragraph}{Ripple-up counter}{3}
-\contentsline {paragraph}{Synchronous up counter}{3}
-\contentsline {paragraph}{Johnson counter}{3}
-\contentsline {paragraph}{}{3}
-\contentsline {section}{\numberline {6}Summary and Conclusion}{3}
-\contentsline {paragraph}{Summary}{3}
-\contentsline {paragraph}{Conclusion}{3}
-\contentsline {section}{\numberline {7}Appendix}{4}
-\contentsline {subsection}{\numberline {7.1}Designing and Building VHDL applications - Counters}{4}
-\contentsline {subsubsection}{\numberline {7.1.1}Verilog code}{4}
-\contentsline {paragraph}{Ripple-up counter}{4}
-\contentsline {paragraph}{Synchronous up counter}{5}
-\contentsline {paragraph}{Johnson Counter}{6}
-\contentsline {paragraph}{Synchronous up counter (schematic entry)}{7}
-\contentsline {paragraph}{}{8}
-\contentsline {subsubsection}{\numberline {7.1.2}Waveforms}{10}
-\contentsline {subsubsection}{\numberline {7.1.3}RTL views}{12}
-\contentsline {subsection}{\numberline {7.2}iverilog \& gtkwave}{14}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{Comparison of gate-level design to synthesised RTL view}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {section}{\numberline {5}Analysis of Errors}{4}
+\contentsline {subsection}{\numberline {5.1}General Issues}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {subsection}{\numberline {5.2}Failure Modes \& Effects Analysis}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {subsubsection}{\numberline {5.2.1}Ripple-up counter}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {subsubsection}{\numberline {5.2.2}Synchronous up counter}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {subsubsection}{\numberline {5.2.3}Johnson counter}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {section}{\numberline {6}Summary and Conclusion}{7}
+\contentsline {paragraph}{Summary}{7}
+\contentsline {paragraph}{Conclusion}{7}
+\contentsline {section}{\numberline {7}Appendix}{8}
+\contentsline {subsection}{\numberline {7.1}Designing and Building VHDL applications - counters}{8}
+\contentsline {subsubsection}{\numberline {7.1.1}Logic reduction \& gate-level diagrams}{8}
+\contentsline {subsubsection}{\numberline {7.1.2}Verilog code}{9}
+\contentsline {paragraph}{Ripple-up counter}{9}
+\contentsline {paragraph}{Synchronous up counter}{11}
+\contentsline {paragraph}{Johnson Counter}{12}
+\contentsline {paragraph}{Synchronous up counter (schematic entry)}{14}
 \contentsline {paragraph}{}{14}
-\contentsline {subsection}{\numberline {7.3}Learning the C language}{16}
-\contentsline {paragraph}{}{16}
+\contentsline {subsubsection}{\numberline {7.1.3}RTL views}{19}
+\contentsline {subsubsection}{\numberline {7.1.4}Waveforms}{21}
+\contentsline {paragraph}{}{21}
+\contentsline {subsection}{\numberline {7.2}Signal Tap II}{23}
+\contentsline {paragraph}{}{23}
+\contentsline {paragraph}{Ripple-up counter Signal Tap II waveform}{23}
+\contentsline {paragraph}{Synchronous up counter Signal Tap II waveform}{24}
+\contentsline {paragraph}{Johnson counter Signal Tap II waveform}{24}
+\contentsline {paragraph}{Schematic entry synchronous up counter Signal Tap II waveform}{25}
+\contentsline {subsection}{\numberline {7.3}iverilog \& gtkwave}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {subsection}{\numberline {7.4}Learning the C language}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{28}
+\contentsline {subsubsection}{\numberline {7.4.1}Requirements Documentation}{28}
+\contentsline {paragraph}{Abstract}{28}
+\contentsline {paragraph}{Introduction}{28}
+\contentsline {paragraph}{Inputs}{28}
+\contentsline {paragraph}{Outputs}{28}
+\contentsline {paragraph}{Major Functions}{28}
+\contentsline {subsubsection}{\numberline {7.4.2}Design Specification}{29}
+\contentsline {paragraph}{Abstract}{29}
+\contentsline {paragraph}{Introduction}{29}
+\contentsline {paragraph}{Inputs}{29}
+\contentsline {paragraph}{Outputs}{29}
+\contentsline {paragraph}{Major Functions}{29}
