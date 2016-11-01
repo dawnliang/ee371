@@ -14,15 +14,15 @@ module overall(arrivGate, deptGate, insideWaterLvl, poundOccupied, incr, decr, a
 	// clock divider
 	clock_divider #(1) cDiv (clock, clk);
 
-	// lock gates
+	// gates
 	wire diffOkArr, diffOkDept;
 	assign diffOkArr = (insideWaterLvl == arrivOutsideLvl);
 	assign diffOkDept = (insideWaterLvl == deptOutsideLvl);
-	// assign arrivGate = gateCtrl && diffOkArr && ~poundOccupied && fiveMinTillArrival;
-	// assign deptGate = gateCtrl && diffOkDept;
 	gate arriv (.doorOpen(arrivGate), .fiveMinTillArriv(fiveMinTillArrival), .diffOk(diffOkArr), .whatGate(1'b1), .poundOccu(poundOccupied), .ctrl(gateCtrl), .reset(reset));
 	gate dept (.doorOpen(deptGate), .fiveMinTillArriv(fiveMinTillArrival), .diffOk(diffOkDept), .whatGate(1'b0), .poundOccu(poundOccupied), .ctrl(gateCtrl), .reset(reset));
 
+	// lock occupied
+	poundOccupied occup(.out(poundOccupied), .arrivalGate(arrivGate), .departureGate(deptGate), .clk(clk), .reset(reset));
 
 	wire doorOpen = arrivGate || deptGate;
 
@@ -39,7 +39,4 @@ module overall(arrivGate, deptGate, insideWaterLvl, poundOccupied, incr, decr, a
 	end
 
 	innerWaterLvl inner (.out(insideWaterLvl), .enable(doorOpen), .up(incr), .down(decr), .max(max), .min(min), .clk(clk), .reset(reset));
-
-	// general lock state variable
-	poundOccupied occup(.out(poundOccupied), .arrivalGate(arrivGate), .departureGate(deptGate), .clk(clk), .reset(reset));
 endmodule
