@@ -1,5 +1,5 @@
 $date
-	Tue Nov  1 02:36:23 2016
+	Tue Nov  1 11:53:10 2016
 $end
 $version
 	Icarus Verilog
@@ -23,13 +23,11 @@ $var wire 1 $ fiveMinTillArriv $end
 $var wire 1 % poundOccu $end
 $var wire 1 & reset $end
 $var wire 1 ' whatGate $end
-$var reg 1 ( open $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-x(
 x'
 0&
 x%
@@ -39,10 +37,9 @@ x"
 x!
 $end
 #10
-0!
-0(
 1&
 #20
+0!
 0#
 0$
 0%
@@ -67,29 +64,38 @@ $end
 #90
 1#
 #100
+0!
 0#
 0$
 0%
 1"
 #110
+1!
 1#
 #120
+0!
 0#
 1$
 #130
+1!
 1#
 #140
+0!
 0#
 0$
 1%
 #150
+1!
 1#
 #160
+0!
 0#
 1$
 #170
+1!
 1#
 #180
+0!
 0#
 0$
 0%
@@ -121,11 +127,14 @@ $end
 #270
 1#
 #280
+0!
 0#
 1$
 #290
+1!
 1#
 #300
+0!
 0#
 0$
 1%

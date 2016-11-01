@@ -23,7 +23,7 @@ module innerWaterLvl(out, enable, up, down, max, min, clk, reset);
 
 	always@(posedge clk) begin
 		if (reset) begin
-			ps <= 4'b0000;
+			ps <= 4'b0;
 		end else begin
 			ps <= ns;
 		end

@@ -1,5 +1,5 @@
 $date
-	Tue Nov  1 03:18:14 2016
+	Tue Nov  1 15:17:58 2016
 $end
 $version
 	Icarus Verilog
@@ -21,58 +21,40 @@ $var reg 1 * gateCtrl $end
 $var reg 1 + incr $end
 $var reg 1 , reset $end
 $scope module dut $end
+$var wire 1 $ arrivGate $end
 $var wire 4 - arrivOutsideLvl [3:0] $end
 $var wire 1 & clock $end
 $var wire 1 ' decr $end
+$var wire 1 # deptGate $end
 $var wire 4 . deptOutsideLvl [3:0] $end
-$var wire 1 / doorOpen $end
 $var wire 1 ) fiveMinTillArrival $end
 $var wire 1 * gateCtrl $end
 $var wire 1 + incr $end
 $var wire 1 , reset $end
+$var wire 1 / sealed $end
 $var wire 1 ! poundOccupied $end
 $var wire 4 0 insideWaterLvl [3:0] $end
 $var wire 1 1 diffOkDept $end
 $var wire 1 2 diffOkArr $end
-$var wire 1 # deptGate $end
 $var wire 1 3 clk $end
-$var wire 1 $ arrivGate $end
 $var reg 4 4 max [3:0] $end
 $var reg 4 5 min [3:0] $end
-$scope module arriv $end
-$var wire 1 * ctrl $end
-$var wire 1 2 diffOk $end
-$var wire 1 $ doorOpen $end
-$var wire 1 ) fiveMinTillArriv $end
-$var wire 1 , reset $end
-$var wire 1 6 whatGate $end
-$var wire 1 ! poundOccu $end
-$upscope $end
 $scope module cDiv $end
 $var wire 1 & clk $end
 $var wire 1 3 divided_clock $end
-$var reg 32 7 clocks [31:0] $end
-$upscope $end
-$scope module dept $end
-$var wire 1 * ctrl $end
-$var wire 1 1 diffOk $end
-$var wire 1 # doorOpen $end
-$var wire 1 ) fiveMinTillArriv $end
-$var wire 1 , reset $end
-$var wire 1 8 whatGate $end
-$var wire 1 ! poundOccu $end
+$var reg 32 6 clocks [31:0] $end
 $upscope $end
 $scope module inner $end
 $var wire 1 3 clk $end
 $var wire 1 ' down $end
 $var wire 1 / enable $end
-$var wire 4 9 max [3:0] $end
-$var wire 4 : min [3:0] $end
+$var wire 4 7 max [3:0] $end
+$var wire 4 8 min [3:0] $end
 $var wire 1 , reset $end
 $var wire 1 + up $end
-$var wire 4 ; out [3:0] $end
-$var reg 4 < ns [3:0] $end
-$var reg 4 = ps [3:0] $end
+$var wire 4 9 out [3:0] $end
+$var reg 4 : ns [3:0] $end
+$var reg 4 ; ps [3:0] $end
 $upscope $end
 $scope module occup $end
 $var wire 1 $ arrivalGate $end
@@ -80,7 +62,7 @@ $var wire 1 3 clk $end
 $var wire 1 # departureGate $end
 $var wire 1 , reset $end
 $var wire 1 ! out $end
-$var reg 1 > ns $end
+$var reg 1 < ns $end
 $var reg 1 ! ps $end
 $upscope $end
 $upscope $end
@@ -88,15 +70,13 @@ $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-x>
-bx =
-bx <
+x<
 bx ;
 bx :
 bx 9
-08
-b1 7
-16
+bx 8
+bx 7
+b1 6
 bx 5
 bx 4
 03
@@ -122,157 +102,289 @@ $end
 #2
 0&
 #4
-0>
-b0 <
-0!
-b0 "
-b0 0
-b0 ;
-b0 =
-13
-b10 7
+b10 6
 1&
 #6
 0&
 #8
-0/
+1/
 0$
 0#
-b11 7
+b0 5
+b0 8
+b100 4
+b100 7
+b11 6
 0*
 0)
 0'
 0+
-01
-b1 4
-b1 9
-b1 (
-b1 .
-12
-b0 5
-b0 :
-b0 %
-b0 -
+b0 (
+b0 .
+b100 %
+b100 -
 0,
 1&
 #10
 0&
 #12
-03
-1)
-b100 7
+x/
+x#
+13
+1*
+b100 6
 1&
 #14
 0&
 #16
-b101 7
+b101 6
 1&
 #18
 0&
 #20
-13
-b110 7
+b110 6
 1&
 #22
 0&
 #24
-1>
-1/
-1$
-b111 7
-1*
+b111 6
 1&
 #26
 0&
 #28
 03
-b1000 7
+b1000 6
 1&
 #30
 0&
 #32
-0>
-0/
-0$
-b1001 7
-0)
-0*
+b1001 6
 1&
 #34
 0&
 #36
-13
-1+
-b1010 7
+b1010 6
 1&
 #38
 0&
 #40
-b1011 7
+b1011 6
 1&
 #42
 0&
 #44
-03
-b1100 7
+13
+b1100 6
 1&
 #46
 0&
 #48
-b1101 7
+1/
+0#
+b1101 6
+0*
 1&
 #50
 0&
 #52
-13
-b1110 7
+1)
+b1110 6
 1&
 #54
 0&
 #56
-b1111 7
+b1111 6
 1&
 #58
 0&
 #60
 03
-b10000 7
+1+
+b10000 6
 1&
 #62
 0&
 #64
-b10001 7
+b10001 6
 1&
 #66
 0&
 #68
-13
-b10010 7
+b10010 6
 1&
 #70
 0&
 #72
-b10011 7
+b10011 6
 1&
 #74
 0&
 #76
-03
-b10100 7
+13
+b10100 6
 1&
 #78
 0&
 #80
-b10101 7
+b10101 6
 1&
 #82
 0&
 #84
-13
-b10110 7
+b10110 6
 1&
 #86
 0&
 #88
-b10111 7
+b10111 6
+1&
+#90
+0&
+#92
+03
+b11000 6
+1&
+#94
+0&
+#96
+b11001 6
+1&
+#98
+0&
+#100
+x/
+x$
+x#
+1*
+b11010 6
+1&
+#102
+0&
+#104
+b11011 6
+1&
+#106
+0&
+#108
+1/
+0$
+0#
+13
+0*
+b11100 6
+1&
+#110
+0&
+#112
+b11101 6
+1&
+#114
+0&
+#116
+1'
+b11110 6
+1&
+#118
+0&
+#120
+b11111 6
+0+
+1&
+#122
+0&
+#124
+03
+b100000 6
+1&
+#126
+0&
+#128
+b100001 6
+1&
+#130
+0&
+#132
+b100010 6
+1&
+#134
+0&
+#136
+b100011 6
+1&
+#138
+0&
+#140
+13
+b100100 6
+1&
+#142
+0&
+#144
+b100101 6
+1&
+#146
+0&
+#148
+b100110 6
+1&
+#150
+0&
+#152
+b100111 6
+1&
+#154
+0&
+#156
+03
+b101000 6
+1&
+#158
+0&
+#160
+b101001 6
+1&
+#162
+0&
+#164
+b101010 6
+1&
+#166
+0&
+#168
+b101011 6
+1&
+#170
+0&
+#172
+x/
+x$
+x#
+13
+1*
+b101100 6
+1&
+#174
+0&
+#176
+1/
+0$
+0#
+b101101 6
+0*
+1&
+#178
+0&
+#180
+b101110 6
+1&
+#182
+0&
+#184
+b101111 6
+1&
+#186
+0&
+#188
+03
+b110000 6
 1&
