@@ -9,7 +9,6 @@ module gate_testbench;
 	initial begin
 		reset = 0; #delay;
 		reset = 1; #delay;
-		
 
 		$display("whatGate poundOccu 5minTA diffOk ");
 		$monitor("%b\t %b\t  %b\t  %b\t %b\t", whatGate, poundOccu, fiveMinTillArriv, diffOk, doorOpen);
@@ -36,7 +35,6 @@ module gate_testbench;
 	
 	// file for gtkwave
 	initial begin
-		// these two files support gtkwave and are required
 		$dumpfile("gate.vcd");
 		$dumpvars;
 	end

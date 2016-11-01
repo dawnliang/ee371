@@ -1,0 +1,182 @@
+$date
+	Tue Nov  1 01:59:56 2016
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module overall_testbench $end
+$var wire 1 ! poundOccupied $end
+$var wire 4 " insideWaterLvl [3:0] $end
+$var wire 1 # deptGate $end
+$var wire 1 $ arrivGate $end
+$var reg 4 % arrivOutsideLvl [3:0] $end
+$var reg 1 & clk $end
+$var reg 1 ' decr $end
+$var reg 4 ( deptOutsideLvl [3:0] $end
+$var reg 1 ) fiveMinTillArrival $end
+$var reg 1 * incr $end
+$var reg 1 + reset $end
+$scope module dut $end
+$var wire 4 , arrivOutsideLvl [3:0] $end
+$var wire 1 & clock $end
+$var wire 1 ' decr $end
+$var wire 4 - deptOutsideLvl [3:0] $end
+$var wire 1 . diffOkArr $end
+$var wire 1 / diffOkDept $end
+$var wire 1 0 doorOpen $end
+$var wire 1 ) fiveMinTillArrival $end
+$var wire 1 * incr $end
+$var wire 1 + reset $end
+$var wire 1 ! poundOccupied $end
+$var wire 4 1 insideWaterLvl [3:0] $end
+$var wire 1 # deptGate $end
+$var wire 1 2 clk $end
+$var wire 1 $ arrivGate $end
+$var reg 4 3 max [3:0] $end
+$var reg 4 4 min [3:0] $end
+$scope module arriv $end
+$var wire 1 . diffOk $end
+$var wire 1 $ doorOpen $end
+$var wire 1 ) fiveMinTillArriv $end
+$var wire 1 + reset $end
+$var wire 1 5 whatGate $end
+$var wire 1 ! poundOccu $end
+$upscope $end
+$scope module cDiv $end
+$var wire 1 & clk $end
+$var wire 1 2 divided_clock $end
+$var reg 32 6 clocks [31:0] $end
+$upscope $end
+$scope module dept $end
+$var wire 1 / diffOk $end
+$var wire 1 # doorOpen $end
+$var wire 1 ) fiveMinTillArriv $end
+$var wire 1 + reset $end
+$var wire 1 7 whatGate $end
+$var wire 1 ! poundOccu $end
+$upscope $end
+$scope module inner $end
+$var wire 1 2 clk $end
+$var wire 1 ' down $end
+$var wire 1 0 enable $end
+$var wire 4 8 max [3:0] $end
+$var wire 4 9 min [3:0] $end
+$var wire 4 : out [3:0] $end
+$var wire 1 + reset $end
+$var wire 1 * up $end
+$var reg 4 ; ns [3:0] $end
+$var reg 4 < ps [3:0] $end
+$upscope $end
+$scope module occup $end
+$var wire 1 $ arrivalGate $end
+$var wire 1 2 clk $end
+$var wire 1 # departureGate $end
+$var wire 1 + reset $end
+$var wire 1 ! canalState $end
+$var reg 1 = ns $end
+$var reg 1 ! ps $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x=
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+07
+b1 6
+15
+bx 4
+bx 3
+02
+bx 1
+x0
+z/
+z.
+bx -
+bx ,
+1+
+x*
+x)
+bx (
+x'
+1&
+bx %
+x$
+x#
+bx "
+x!
+$end
+#2
+0&
+#4
+0$
+0)
+0'
+0*
+b1 3
+b1 8
+b1 (
+b1 -
+b100 4
+b100 9
+b100 %
+b100 ,
+0+
+b10 6
+1&
+#6
+0&
+#8
+x$
+b11 6
+1)
+1&
+#10
+0&
+#12
+b100 6
+1&
+#14
+0&
+#16
+b101 6
+1&
+#18
+0&
+#20
+b110 6
+1&
+#22
+0&
+#24
+b111 6
+1*
+1&
+#26
+0&
+#28
+b1000 6
+1&
+#30
+0&
+#32
+b1001 6
+1&
+#34
+0&
+#36
+b1010 6
+1&
+#38
+0&
+#40
+b1011 6
+1&

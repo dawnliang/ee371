@@ -1,0 +1,215 @@
+#! /usr/local/Cellar/icarus-verilog/10.0/bin/vvp
+:ivl_version "10.0 (stable)" "(v10_0)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7feedfc033c0 .scope module, "gate_testbench" "gate_testbench" 2 2;
+ .timescale 0 0;
+P_0x7feedfc05570 .param/l "delay" 0 2 8, +C4<00000000000000000000000000001010>;
+v0x7feedfc24590_0 .var "diffOk", 0 0;
+v0x7feedfc24620_0 .net "doorOpen", 0 0, L_0x7feedfc24fd0;  1 drivers
+v0x7feedfc246b0_0 .var "fiveMinTillArriv", 0 0;
+v0x7feedfc24780_0 .var "poundOccu", 0 0;
+v0x7feedfc24830_0 .var "reset", 0 0;
+v0x7feedfc24900_0 .var "whatGate", 0 0;
+S_0x7feedfc13eb0 .scope module, "dut" "gate" 2 6, 3 1 0, S_0x7feedfc033c0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "doorOpen"
+    .port_info 1 /INPUT 1 "fiveMinTillArriv"
+    .port_info 2 /INPUT 1 "diffOk"
+    .port_info 3 /INPUT 1 "whatGate"
+    .port_info 4 /INPUT 1 "poundOccu"
+    .port_info 5 /INPUT 1 "reset"
+L_0x7feedfc24990 .functor NOT 1, v0x7feedfc24900_0, C4<0>, C4<0>, C4<0>;
+L_0x7feedfc24a60 .functor AND 1, L_0x7feedfc24990, v0x7feedfc24780_0, C4<1>, C4<1>;
+L_0x7feedfc24b70 .functor AND 1, L_0x7feedfc24a60, v0x7feedfc24590_0, C4<1>, C4<1>;
+L_0x7feedfc24c60 .functor AND 1, v0x7feedfc24900_0, v0x7feedfc24590_0, C4<1>, C4<1>;
+L_0x7feedfc24cd0 .functor NOT 1, v0x7feedfc24780_0, C4<0>, C4<0>, C4<0>;
+L_0x7feedfc24d90 .functor AND 1, L_0x7feedfc24c60, L_0x7feedfc24cd0, C4<1>, C4<1>;
+L_0x7feedfc24ea0 .functor AND 1, L_0x7feedfc24d90, v0x7feedfc246b0_0, C4<1>, C4<1>;
+L_0x7feedfc24fd0 .functor OR 1, L_0x7feedfc24b70, L_0x7feedfc24ea0, C4<0>, C4<0>;
+v0x7feedfc035b0_0 .net *"_s0", 0 0, L_0x7feedfc24990;  1 drivers
+v0x7feedfc23ce0_0 .net *"_s10", 0 0, L_0x7feedfc24d90;  1 drivers
+v0x7feedfc23d80_0 .net *"_s12", 0 0, L_0x7feedfc24ea0;  1 drivers
+v0x7feedfc23e10_0 .net *"_s2", 0 0, L_0x7feedfc24a60;  1 drivers
+v0x7feedfc23eb0_0 .net *"_s4", 0 0, L_0x7feedfc24b70;  1 drivers
+v0x7feedfc23f90_0 .net *"_s6", 0 0, L_0x7feedfc24c60;  1 drivers
+v0x7feedfc24030_0 .net *"_s8", 0 0, L_0x7feedfc24cd0;  1 drivers
+v0x7feedfc240e0_0 .net "diffOk", 0 0, v0x7feedfc24590_0;  1 drivers
+v0x7feedfc24180_0 .net "doorOpen", 0 0, L_0x7feedfc24fd0;  alias, 1 drivers
+v0x7feedfc24290_0 .net "fiveMinTillArriv", 0 0, v0x7feedfc246b0_0;  1 drivers
+v0x7feedfc24320_0 .net "poundOccu", 0 0, v0x7feedfc24780_0;  1 drivers
+v0x7feedfc243c0_0 .net "reset", 0 0, v0x7feedfc24830_0;  1 drivers
+v0x7feedfc24460_0 .net "whatGate", 0 0, v0x7feedfc24900_0;  1 drivers
+    .scope S_0x7feedfc033c0;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24830_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24830_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 14 "$display", "whatGate poundOccu 5minTA diffOk " {0 0 0};
+    %vpi_call 2 15 "$monitor", "%b\011 %b\011  %b\011  %b\011 %b\011", v0x7feedfc24900_0, v0x7feedfc24780_0, v0x7feedfc246b0_0, v0x7feedfc24590_0, v0x7feedfc24620_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24900_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24780_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc246b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7feedfc24590_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 34 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x7feedfc033c0;
+T_1 ;
+    %vpi_call 2 39 "$dumpfile", "gate.vcd" {0 0 0};
+    %vpi_call 2 40 "$dumpvars" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "gate_testbench.v";
+    "./gate.v";
