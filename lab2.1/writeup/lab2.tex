@@ -1,0 +1,105 @@
+\documentclass{article}
+
+\title{EE 371 Autumn 2016 - Lab 2}
+\date{\today}
+\author{William Li, Dawn Liang, Jun Park}
+
+% general document formatting
+\usepackage[margin=1in]{geometry}
+\usepackage[document]{ragged2e}
+\usepackage{times}
+
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{\thesection}{0.5em}{\uppercase}
+
+% formatting for code & floats
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Verilog,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
+% write-up
+\begin{document}
+
+\newcommand{\namesigdate}[2][5cm]{
+  \begin{tabular}{@{}p{#1}@{}}
+    #2 \\[2\normalbaselineskip] \hrule \\[0pt]
+    {\small \textit{Signature}} \\[2\normalbaselineskip] \hrule \\[0pt]
+    {\small \textit{Date}}
+  \end{tabular}
+}
+
+\pagenumbering{gobble}
+\maketitle
+\newpage
+
+\paragraph{} We certify that the work in this report is our own, and that any work that is not ours is cited.
+\paragraph{} \noindent \namesigdate{William Li} \hfill \namesigdate{Dawn Liang} \hfill \namesigdate{Jun Park}
+\newpage
+
+\tableofcontents
+\newpage
+
+\pagenumbering{arabic}
+
+\section{Abstract}
+\paragraph{} In this lab, we designed and built a simple time-dependent system, a poundlock control system, and then familiarised ourselves with the useful concept of pointers in the C language. We also wrote requirement and design specifications as well as a functional decomposition, to help us organise the design process. we tested our design both using simulation with iVerilog and gtkwave as well as in hardware on the Altera DE1-SoC board.
+
+
+\section{Introduction}
+\paragraph{} The first part of the lab focuses on building systems in VHDL (Verilog Hardware Description Language). We decomposed the system in terms of requirements, design, and functions, and wrote specifications for each. We then built and tested each submodule using iVerilog and GTKWave. Finally, we integrated the subsystems together and tested both in simulations and on the physical DE1-SoC board. We used Signal Tap II Logic Analyser to debug our system and verify proper functionality. In the second part of the lab, we wrote a simple C program using pointers, to introduce and familiarise ourselves with the concepts.
+
+
+\section{Discussion}
+	\subsection{Design}
+		\subsubsection{Design Specification}
+		\paragraph{} The lock system must manage the flow of boats along the canal. If the lock is unoccupied, it will open its arrival gates when signaled by an oncoming boat, adjusting the water levels as necessary. Once the boat is inside the lock, it will seal all gates and raise/lower the boat such that the departure gates can open and the boat can exit.
+
+		\subsubsection{Design Procedure}
+		\paragraph{} 
+
+		\subsubsection{System Description}
+		\subsubsection{Software Implementation}
+		\subsubsection{Hardware Implementation}
+
+	\subsection{Test}
+		\subsubsection{Test Plan}
+		\subsubsection{Test Specification}
+		\subsubsection{Test Cases}
+
+
+\section{Results}
+	\subsection{Analysis of Errors}
+
+
+\section{Summary \& Conclusion}
+
+
+\section{Appendix}
+	\subsection{Lock Control System}
+	\subsection{C Programming}
+
+\end{document}

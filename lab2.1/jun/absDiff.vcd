@@ -1,0 +1,68 @@
+$date
+	Sat Oct 22 12:20:03 2016
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module absDiff_testbench $end
+$var wire 5 ! out [4:0] $end
+$var reg 5 " a [4:0] $end
+$var reg 5 # b [4:0] $end
+$scope module dut $end
+$var wire 5 $ a [4:0] $end
+$var wire 5 % b [4:0] $end
+$var reg 5 & out [4:0] $end
+$var reg 5 ' temp [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10
+b10 !
+b10 &
+b10 '
+b1 #
+b1 %
+b11 "
+b11 $
+#20
+b1 !
+b1 &
+b1 '
+b11 #
+b11 %
+b100 "
+b100 $
+#30
+b11111 '
+b1000 #
+b1000 %
+b111 "
+b111 $
+#40
+b1 '
+b1110 #
+b1110 %
+b1111 "
+b1111 $
+#50
+b1001 !
+b1001 &
+b10111 '
+b1111 #
+b1111 %
+b110 "
+b110 $
+#60
