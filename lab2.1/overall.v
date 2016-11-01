@@ -24,7 +24,8 @@ module overall(arrivGate, deptGate, insideWaterLvl, poundOccupied, incr, decr, a
 	// lock occupied
 	poundOccupied occup(.out(poundOccupied), .arrivalGate(arrivGate), .departureGate(deptGate), .clk(clk), .reset(reset));
 
-	wire doorOpen = arrivGate || deptGate;
+	wire doorOpen;
+	assign doorOpen = arrivGate || deptGate;
 
 	// controlling lock water levels
 	reg [3:0] max, min;

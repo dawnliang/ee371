@@ -1,17 +1,9 @@
-/*  EE 371 Lab 2
-	Pound Occupied module 
-	William Li, Jun Park, Dawn Liang
-
-	poundOccupied module
-*/
-
 module poundOccupied(out, arrivalGate, departureGate, clk, reset);
 	output out;
 	input  arrivalGate, departureGate;
 	input  clk, reset; 
 
-	reg ps, ns; 
-
+	reg ps, ns;
 	always@(*) begin
 		case (ps)
 			0:	if (arrivalGate)
