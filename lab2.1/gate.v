@@ -1,6 +1,6 @@
-module gate(doorOpen, fiveMinTillArriv, diffOk, whatGate, poundOccu, reset);
+module gate(doorOpen, fiveMinTillArriv, diffOk, whatGate, poundOccu, ctrl, reset);
 	output doorOpen;
-	input fiveMinTillArriv, diffOk, whatGate, poundOccu, reset;
-	
-	assign doorOpen = (~whatGate && poundOccu && diffOk) || (whatGate && diffOk && ~poundOccu && fiveMinTillArriv);	
+	input fiveMinTillArriv, diffOk, whatGate, poundOccu, ctrl, reset;
+
+	assign doorOpen = ctrl && ((~whatGate && diffOk) || (whatGate && diffOk && ~poundOccu && fiveMinTillArriv));
 endmodule

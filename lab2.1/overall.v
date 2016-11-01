@@ -2,21 +2,31 @@
 `include "innerWaterLvl.v"
 `include "gate.v"
 `include "poundOccupied.v"
-module overall(arrivGate, deptGate, insideWaterLvl, poundOccupied, incr, decr, arrivOutsideLvl, deptOutsideLvl, fiveMinTillArrival, clock, reset);
+module overall(arrivGate, deptGate, insideWaterLvl, poundOccupied, incr, decr, arrivOutsideLvl, deptOutsideLvl, fiveMinTillArrival, gateCtrl, clock, reset);
 	output [3:0] insideWaterLvl; // LEDs
 	output arrivGate, deptGate; // LEDs
 	output poundOccupied; // LED
 
 	input [3:0] arrivOutsideLvl, deptOutsideLvl; // SWs
-	input incr, decr, fiveMinTillArrival; // KEYs
+	input incr, decr, fiveMinTillArrival, gateCtrl; // KEYs
 	input clock, reset; // internal, SW
 
-	wire diffOkArr, diffOkDept;
+	// clock divider
+	clock_divider #(1) cDiv (clock, clk);
 
-	clock_divider #(24) cDiv (clock, clk);
+	// lock gates
+	wire diffOkArr, diffOkDept;
+	assign diffOkArr = (insideWaterLvl == arrivOutsideLvl);
+	assign diffOkDept = (insideWaterLvl == deptOutsideLvl);
+	// assign arrivGate = gateCtrl && diffOkArr && ~poundOccupied && fiveMinTillArrival;
+	// assign deptGate = gateCtrl && diffOkDept;
+	gate arriv (.doorOpen(arrivGate), .fiveMinTillArriv(fiveMinTillArrival), .diffOk(diffOkArr), .whatGate(1'b1), .poundOccu(poundOccupied), .ctrl(gateCtrl), .reset(reset));
+	gate dept (.doorOpen(deptGate), .fiveMinTillArriv(fiveMinTillArrival), .diffOk(diffOkDept), .whatGate(1'b0), .poundOccu(poundOccupied), .ctrl(gateCtrl), .reset(reset));
+
 
 	wire doorOpen = arrivGate || deptGate;
 
+	// controlling lock water levels
 	reg [3:0] max, min;
 	initial begin
 		if (arrivOutsideLvl > deptOutsideLvl) begin
@@ -29,9 +39,7 @@ module overall(arrivGate, deptGate, insideWaterLvl, poundOccupied, incr, decr, a
 	end
 
 	innerWaterLvl inner (.out(insideWaterLvl), .enable(doorOpen), .up(incr), .down(decr), .max(max), .min(min), .clk(clk), .reset(reset));
-	
-	gate arriv(.doorOpen(arrivGate), .fiveMinTillArriv(fiveMinTillArrival), .diffOk(diffOkArr), .whatGate(1'b1), .poundOccu(poundOccupied), .reset(reset));
-	gate dept(.doorOpen(deptGate), .fiveMinTillArriv(fiveMinTillArrival), .diffOk(diffOkDept), .whatGate(1'b0), .poundOccu(poundOccupied), .reset(reset));
 
-	poundOccupied occup(.canalState(poundOccupied), .arrivalGate(arrivGate), .departureGate(deptGate), .clk(clk), .reset(reset));
+	// general lock state variable
+	poundOccupied occup(.out(poundOccupied), .arrivalGate(arrivGate), .departureGate(deptGate), .clk(clk), .reset(reset));
 endmodule

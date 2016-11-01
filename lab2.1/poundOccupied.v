@@ -5,34 +5,32 @@
 	poundOccupied module
 */
 
-module poundOccupied(canalState, arrivalGate, departureGate, clk, reset);
-	output canalState;
-	input  arrivalGate;
-	input  departureGate;
-	input  clk;
-	input  reset; 
+module poundOccupied(out, arrivalGate, departureGate, clk, reset);
+	output out;
+	input  arrivalGate, departureGate;
+	input  clk, reset; 
 
-	reg ps;
-	reg ns; 
-
-	parameter occupied = 1'b1, unoccupied = 1'b0;
+	reg ps, ns; 
 
 	always@(*) begin
 		case (ps)
-			unoccupied: if (~arrivalGate && ~departureGate) ns = unoccupied;
-						else if (arrivalGate && ~departureGate) ns = occupied;
-						else ns = unoccupied;
+			0:	if (arrivalGate)
+					ns = 1;
+				else
+					ns = 0;
 
-			occupied:   if (~arrivalGate && ~departureGate) ns = occupied;
-						else if (~arrivalGate && departureGate) ns = unoccupied;
-						else ns = unoccupied;
+			1:  if (departureGate)
+					ns = 0;
+				else
+					ns = 1;
 		endcase
 	end
-	assign canalState = ps; 
+
+	assign out = ps; 
 
 	always @(posedge clk) begin
 		if (reset) begin
-			ps <= unoccupied;
+			ps <= 0;
 		end else begin
 			ps <= ns;
 		end
