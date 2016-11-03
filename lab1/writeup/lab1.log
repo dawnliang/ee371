@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 OCT 2016 15:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 NOV 2016 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -193,19 +193,19 @@ File: lstlang3.sty 2014/09/06 1.5e listings language file
 (./lab1.aux)
 \openout1 = `lab1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 45.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -243,9 +243,9 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package ragged2e Info: ABD: executing \RaggedRight on input line 43.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 45.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 43.
+LaTeX Info: Redefining \selectfont on input line 45.
 \c@lstlisting=\count102
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -306,32 +306,32 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 54.
+(Font)              <12> on input line 56.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 54.
+(Font)              <8> on input line 56.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 54.
+(Font)              <6> on input line 56.
 
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 59.
+(Font)              <7> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 59.
+(Font)              <5> on input line 61.
 
 [2]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
  (./lab1.toc)
 \tf@toc=\write3
 \openout3 = `lab1.toc'.
 
  [3]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
@@ -342,12 +342,12 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-Overfull \hbox (0.27133pt too wide) in paragraph at lines 78--79
+Overfull \hbox (0.27133pt too wide) in paragraph at lines 80--81
 [] [][] \OT1/ptm/m/n/10 We built four dif-fer-ent types of coun-ters: a ripple-
 up counter, two syn-chronous up coun-ters, and a John-son counter, 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 84.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 86.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
@@ -356,27 +356,27 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 File: figures/synch_k_maps.png Graphic file (type png)
 
 <use figures/synch_k_maps.png>
-Package pdftex.def Info: figures/synch_k_maps.png used on input line 88.
+Package pdftex.def Info: figures/synch_k_maps.png used on input line 90.
 (pdftex.def)             Requested size: 187.89914pt x 191.87192pt.
  [2 <./figures/synch_k_maps.png>]
-Overfull \hbox (3.11967pt too wide) in paragraph at lines 121--122
+Overfull \hbox (3.11967pt too wide) in paragraph at lines 123--124
 \OT1/ptm/m/n/10 should cy-cle back to their ini-tial state af-ter reach-ing the
  max-i-mum state. For the schematic en-try syn-chronous counter, 
  []
 
 [3]
-Overfull \hbox (0.47984pt too wide) in paragraph at lines 144--145
+Overfull \hbox (0.47984pt too wide) in paragraph at lines 146--147
 [] [][] \OT1/ptm/m/n/10 The list-Price cal-cu-la-tor out-putted the cor-rect pr
 ices when pre-sented with ex-pected pos-i-tive nu-mer-i-cal in-puts. When 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 158.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 160.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 158.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 160.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
@@ -387,19 +387,19 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-Overfull \hbox (0.67043pt too wide) in paragraph at lines 176--177
+Overfull \hbox (0.67043pt too wide) in paragraph at lines 178--179
 []\OT1/ptm/m/n/10 SA0: The least sig-nif-i-cant bit of the out-put will never c
 hange from 0 and the rest of the counter will stop count- 
  []
 
 
-Overfull \hbox (0.67043pt too wide) in paragraph at lines 177--178
+Overfull \hbox (0.67043pt too wide) in paragraph at lines 179--180
 []\OT1/ptm/m/n/10 SA1: The least sig-nif-i-cant bit of the out-put will never c
 hange from 1 and the rest of the counter will stop count- 
  []
 
 [4] [5]
-Overfull \hbox (2.14117pt too wide) in paragraph at lines 261--262
+Overfull \hbox (2.14117pt too wide) in paragraph at lines 263--264
 []\OT1/ptm/m/n/10 SA0: D3 will al-ways be high, but there are no fol-low-ing co
 un-ters to be af-fected. Q0, Q1, and Q2 will countinue 
  []
@@ -443,7 +443,7 @@ File: figures/gate_diagrams/rippleUp_gate.jpg Graphic file (type jpg)
 
 <use figures/gate_diagrams/rippleUp_gate.jpg>
 Package pdftex.def Info: figures/gate_diagrams/rippleUp_gate.jpg used on input 
-line 324.
+line 326.
 (pdftex.def)             Requested size: 234.8775pt x 176.15926pt.
  [7]
 <figures/gate_diagrams/synchUp_gate.jpg, id=43, 681.54625pt x 870.25125pt>
@@ -451,7 +451,7 @@ File: figures/gate_diagrams/synchUp_gate.jpg Graphic file (type jpg)
 
 <use figures/gate_diagrams/synchUp_gate.jpg>
 Package pdftex.def Info: figures/gate_diagrams/synchUp_gate.jpg used on input l
-ine 330.
+ine 332.
 (pdftex.def)             Requested size: 234.8775pt x 299.90503pt.
 
 <figures/gate_diagrams/johnson_gate.jpg, id=44, 676.5275pt x 715.67375pt>
@@ -459,7 +459,7 @@ File: figures/gate_diagrams/johnson_gate.jpg Graphic file (type jpg)
 
 <use figures/gate_diagrams/johnson_gate.jpg>
 Package pdftex.def Info: figures/gate_diagrams/johnson_gate.jpg used on input l
-ine 336.
+ine 338.
 (pdftex.def)             Requested size: 234.8775pt x 248.4693pt.
  [8 <./figures/gate_diagrams/rippleUp_gate.jpg> <./figures/gate_diagrams/synchU
 p_gate.jpg>]
@@ -472,7 +472,7 @@ File: figures/gate_diagrams/schem_synUp.png Graphic file (type png)
 
 <use figures/gate_diagrams/schem_synUp.png>
 Package pdftex.def Info: figures/gate_diagrams/schem_synUp.png used on input li
-ne 358.
+ne 360.
 (pdftex.def)             Requested size: 352.31625pt x 165.74469pt.
  (../counters/schem_synUp.v [14 <./figures/gate_diagrams/schem_synUp.png>] [15]
  [16])
@@ -481,21 +481,21 @@ ne 358.
 File: figures/RTLs/rippleUp_RTL.png Graphic file (type png)
 
 <use figures/RTLs/rippleUp_RTL.png>
-Package pdftex.def Info: figures/RTLs/rippleUp_RTL.png used on input line 371.
+Package pdftex.def Info: figures/RTLs/rippleUp_RTL.png used on input line 373.
 (pdftex.def)             Requested size: 352.31625pt x 355.06465pt.
  [18]
 <figures/RTLs/synUp_RTL.png, id=83, 642.4pt x 482.80376pt>
 File: figures/RTLs/synUp_RTL.png Graphic file (type png)
 
 <use figures/RTLs/synUp_RTL.png>
-Package pdftex.def Info: figures/RTLs/synUp_RTL.png used on input line 378.
+Package pdftex.def Info: figures/RTLs/synUp_RTL.png used on input line 380.
 (pdftex.def)             Requested size: 352.31625pt x 264.79146pt.
  [19 <./figures/RTLs/rippleUp_RTL.png>]
 <figures/RTLs/johnson_RTL.png, id=88, 589.20125pt x 257.96375pt>
 File: figures/RTLs/johnson_RTL.png Graphic file (type png)
 
 <use figures/RTLs/johnson_RTL.png>
-Package pdftex.def Info: figures/RTLs/johnson_RTL.png used on input line 385.
+Package pdftex.def Info: figures/RTLs/johnson_RTL.png used on input line 387.
 (pdftex.def)             Requested size: 352.31625pt x 154.25198pt.
 
 <figures/RTLs/schem_synUp_RTL.png, id=89, 1150.2975pt x 486.81876pt>
@@ -503,7 +503,7 @@ File: figures/RTLs/schem_synUp_RTL.png Graphic file (type png)
 
 <use figures/RTLs/schem_synUp_RTL.png>
 Package pdftex.def Info: figures/RTLs/schem_synUp_RTL.png used on input line 39
-2.
+4.
 (pdftex.def)             Requested size: 352.31625pt x 149.09976pt.
  [20 <./figures/RTLs/synUp_RTL.png> <./figures/RTLs/johnson_RTL.png>]
 <figures/waveforms/rippleUp_wave.png, id=95, 629.35126pt x 391.4625pt>
@@ -511,7 +511,7 @@ File: figures/waveforms/rippleUp_wave.png Graphic file (type png)
 
 <use figures/waveforms/rippleUp_wave.png>
 Package pdftex.def Info: figures/waveforms/rippleUp_wave.png used on input line
- 403.
+ 405.
 (pdftex.def)             Requested size: 352.31625pt x 219.14581pt.
 
 <figures/waveforms/synUp_wave.png, id=96, 628.3475pt x 384.43625pt>
@@ -519,7 +519,7 @@ File: figures/waveforms/synUp_wave.png Graphic file (type png)
 
 <use figures/waveforms/synUp_wave.png>
 Package pdftex.def Info: figures/waveforms/synUp_wave.png used on input line 41
-0.
+2.
 (pdftex.def)             Requested size: 352.31625pt x 215.55266pt.
  [21 <./figures/RTLs/schem_synUp_RTL.png (PNG copy)> <./figures/waveforms/rippl
 eUp_wave.png>]
@@ -528,7 +528,7 @@ File: figures/waveforms/johnson_wave.png Graphic file (type png)
 
 <use figures/waveforms/johnson_wave.png>
 Package pdftex.def Info: figures/waveforms/johnson_wave.png used on input line 
-417.
+419.
 (pdftex.def)             Requested size: 352.31625pt x 216.81534pt.
 
 <figures/waveforms/schem_synUp_wave.png, id=102, 626.34pt x 385.44pt>
@@ -536,7 +536,7 @@ File: figures/waveforms/schem_synUp_wave.png Graphic file (type png)
 
 <use figures/waveforms/schem_synUp_wave.png>
 Package pdftex.def Info: figures/waveforms/schem_synUp_wave.png used on input l
-ine 424.
+ine 426.
 (pdftex.def)             Requested size: 352.31625pt x 216.81534pt.
  [22 <./figures/waveforms/synUp_wave.png> <./figures/waveforms/johnson_wave.png
 >]
@@ -544,14 +544,14 @@ ine 424.
 File: figures/stp/rippleUp_stp.png Graphic file (type png)
 
 <use figures/stp/rippleUp_stp.png>
-Package pdftex.def Info: figures/stp/rippleUp_stp.png used on input line 436.
+Package pdftex.def Info: figures/stp/rippleUp_stp.png used on input line 438.
 (pdftex.def)             Requested size: 352.31625pt x 254.54335pt.
 
 <figures/stp/synUp_stp.png, id=110, 827.4915pt x 600.44325pt>
 File: figures/stp/synUp_stp.png Graphic file (type png)
 
 <use figures/stp/synUp_stp.png>
-Package pdftex.def Info: figures/stp/synUp_stp.png used on input line 444.
+Package pdftex.def Info: figures/stp/synUp_stp.png used on input line 446.
 (pdftex.def)             Requested size: 352.31625pt x 255.64769pt.
  [23 <./figures/waveforms/schem_synUp_wave.png> <./figures/stp/rippleUp_stp.png
 >]
@@ -559,14 +559,14 @@ Package pdftex.def Info: figures/stp/synUp_stp.png used on input line 444.
 File: figures/stp/johnson_stp.png Graphic file (type png)
 
 <use figures/stp/johnson_stp.png>
-Package pdftex.def Info: figures/stp/johnson_stp.png used on input line 452.
+Package pdftex.def Info: figures/stp/johnson_stp.png used on input line 454.
 (pdftex.def)             Requested size: 352.31625pt x 255.97691pt.
 
 <figures/stp/schem_synUp_stp.png, id=117, 839.135pt x 594.22pt>
 File: figures/stp/schem_synUp_stp.png Graphic file (type png)
 
 <use figures/stp/schem_synUp_stp.png>
-Package pdftex.def Info: figures/stp/schem_synUp_stp.png used on input line 460
+Package pdftex.def Info: figures/stp/schem_synUp_stp.png used on input line 462
 .
 (pdftex.def)             Requested size: 352.31625pt x 249.48909pt.
  [24 <./figures/stp/synUp_stp.png> <./figures/stp/johnson_stp.png>] (../iverilo
@@ -577,7 +577,7 @@ g_gtkwave/andOr0.v)
 File: figures/iverilog_gtkwave.png Graphic file (type png)
 
 <use figures/iverilog_gtkwave.png>
-Package pdftex.def Info: figures/iverilog_gtkwave.png used on input line 475.
+Package pdftex.def Info: figures/iverilog_gtkwave.png used on input line 477.
 (pdftex.def)             Requested size: 352.31625pt x 140.40736pt.
  [26]
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -591,7 +591,7 @@ File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 File: figures/listPrice_results.png Graphic file (type png)
 
 <use figures/listPrice_results.png>
-Package pdftex.def Info: figures/listPrice_results.png used on input line 487.
+Package pdftex.def Info: figures/listPrice_results.png used on input line 489.
 (pdftex.def)             Requested size: 352.31625pt x 226.66853pt.
  [27 <./figures/iverilog_gtkwave.png>]
 Missing character: There is no â in font ptmr7t!
@@ -634,7 +634,7 @@ b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ocal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on lab1.pdf (32 pages, 1377759 bytes).
+Output written on lab1.pdf (32 pages, 1377934 bytes).
 PDF statistics:
  171 PDF objects out of 1000 (max. 8388607)
  95 compressed objects within 1 object stream

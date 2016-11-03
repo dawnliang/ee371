@@ -1,0 +1,148 @@
+$date
+	Wed Nov  2 16:42:48 2016
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module gate_testbench $end
+$var wire 1 ! doorOpen $end
+$var reg 1 " ctrl $end
+$var reg 1 # diffOk $end
+$var reg 1 $ fiveMinTillArriv $end
+$var reg 1 % poundOccu $end
+$var reg 1 & reset $end
+$var reg 1 ' whatGate $end
+$scope module dut $end
+$var wire 1 " ctrl $end
+$var wire 1 # diffOk $end
+$var wire 1 ! doorOpen $end
+$var wire 1 $ fiveMinTillArriv $end
+$var wire 1 % poundOccu $end
+$var wire 1 & reset $end
+$var wire 1 ' whatGate $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x'
+0&
+x%
+x$
+x#
+x"
+x!
+$end
+#10
+1&
+#20
+0!
+0#
+0$
+0%
+0"
+0'
+#30
+1#
+#40
+0#
+1$
+#50
+1#
+#60
+0#
+0$
+1%
+#70
+1#
+#80
+0#
+1$
+#90
+1#
+#100
+0!
+0#
+0$
+0%
+1"
+#110
+1!
+1#
+#120
+0!
+0#
+1$
+#130
+1!
+1#
+#140
+0!
+0#
+0$
+1%
+#150
+1!
+1#
+#160
+0!
+0#
+1$
+#170
+1!
+1#
+#180
+0!
+0#
+0$
+0%
+0"
+1'
+#190
+1#
+#200
+0#
+1$
+#210
+1#
+#220
+0#
+0$
+1%
+#230
+1#
+#240
+0#
+1$
+#250
+1#
+#260
+0#
+0$
+0%
+1"
+#270
+1#
+#280
+0!
+0#
+1$
+#290
+1!
+1#
+#300
+0!
+0#
+0$
+1%
+#310
+1#
+#320
+0#
+1$
+#330
+1#
+#340

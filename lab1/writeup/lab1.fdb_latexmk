@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1477781633 "lab1.tex" "lab1.pdf" "lab1" 1477781639
+["pdflatex"] 1478132961 "lab1.tex" "lab1.pdf" "lab1" 1478133083
   "../c_project/listPrice/listPrice.c" 1476745305 1169 402fe0865a2ada3df8c61b491729ba75 ""
   "../counters/DFlipFlop.v" 1476723088 245 07c1b83f141a458e1fe0100c1ed19fb1 ""
   "../counters/johnsonCounter.sv" 1476911528 654 9ff5ff4f6db1494aed1610ec9a84f5cd ""
@@ -127,11 +127,11 @@
   "figures/waveforms/rippleUp_wave.png" 1476743628 44026 3b75767530118184c29968e1f4e07ea8 ""
   "figures/waveforms/schem_synUp_wave.png" 1476812606 48443 a905e5f1a5b718a2f93d3e73203e5353 ""
   "figures/waveforms/synUp_wave.png" 1476812517 42631 9690907625f50175fb71af99da0aaf67 ""
-  "lab1.aux" 1477781639 11221 037e460c331ffe75a330807675b9e793 ""
-  "lab1.tex" 1476915865 34203 944cf748b3c5727158b37e57597f1230 ""
-  "lab1.toc" 1477781639 5156 e7c2962eef997aee7915550ec070e7c9 ""
+  "lab1.aux" 1478132965 11221 037e460c331ffe75a330807675b9e793 ""
+  "lab1.tex" 1477782434 34215 c905816681ddc526d0fb1f517a03e1ce ""
+  "lab1.toc" 1478132965 5156 e7c2962eef997aee7915550ec070e7c9 ""
   (generated)
   "lab1.toc"
   "lab1.aux"
-  "lab1.log"
   "lab1.pdf"
+  "lab1.log"

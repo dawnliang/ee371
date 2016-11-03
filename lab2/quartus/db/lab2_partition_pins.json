@@ -1,0 +1,93 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "arrivGate",
+					"strict" : false
+				},
+				{
+					"name" : "deptGate",
+					"strict" : false
+				},
+				{
+					"name" : "insideWaterLvl[0]",
+					"strict" : false
+				},
+				{
+					"name" : "insideWaterLvl[1]",
+					"strict" : false
+				},
+				{
+					"name" : "insideWaterLvl[2]",
+					"strict" : false
+				},
+				{
+					"name" : "insideWaterLvl[3]",
+					"strict" : false
+				},
+				{
+					"name" : "poundOccupied",
+					"strict" : false
+				},
+				{
+					"name" : "gateCtrl",
+					"strict" : false
+				},
+				{
+					"name" : "fiveMinTillArrival",
+					"strict" : false
+				},
+				{
+					"name" : "arrivOutsideLvl[0]",
+					"strict" : false
+				},
+				{
+					"name" : "arrivOutsideLvl[1]",
+					"strict" : false
+				},
+				{
+					"name" : "arrivOutsideLvl[2]",
+					"strict" : false
+				},
+				{
+					"name" : "arrivOutsideLvl[3]",
+					"strict" : false
+				},
+				{
+					"name" : "deptOutsideLvl[3]",
+					"strict" : false
+				},
+				{
+					"name" : "deptOutsideLvl[0]",
+					"strict" : false
+				},
+				{
+					"name" : "deptOutsideLvl[1]",
+					"strict" : false
+				},
+				{
+					"name" : "deptOutsideLvl[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "incr",
+					"strict" : false
+				},
+				{
+					"name" : "decr",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
