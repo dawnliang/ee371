@@ -1,6 +1,8 @@
 # ee371
 UW EE371 Autumn 2016
-*Contributors (lab group): Dawn Liang, Jun Park, William Li*
+
+*Contributors (lab group): @dawnliang, @junp2, William Li*
+
 *Taught by Jim Peckol*
 
 ## Lab 1: Introduction
