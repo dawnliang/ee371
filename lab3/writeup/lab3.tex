@@ -42,6 +42,7 @@
 
 \begin{document}
 
+% signature page command
 \newcommand{\namesigdate}[2][5cm]{
   \begin{tabular}{@{}p{#1}@{}}
     #2 \\[2\normalbaselineskip] \hrule \\[0pt]
@@ -58,6 +59,8 @@
 
 \paragraph{} \noindent \namesigdate{William Li} \hfill \namesigdate{Dawn Liang} \hfill \namesigdate{Jun Park}
 \newpage
+
+\paragraph{Contributions}
 
 \tableofcontents
 \newpage
@@ -92,3 +95,87 @@
 
 
 \section{Appendix}
+  \subsection{Two-scanner system}
+    \subsubsection{Verilog code}
+      % counter.v
+      \lstinputlisting[language=Verilog]{../verilog/counter.v}
+      \lstinputlisting[language=Verilog]{../verilog/counter_testbench.v}
+
+      % counterCtrl.v
+      \lstinputlisting[language=Verilog]{../verilog/counterCtrl.v}
+      \lstinputlisting[language=Verilog]{../verilog/counterCtrl_testbench.v}
+
+      % scannerState.v
+      \lstinputlisting[language=Verilog]{../verilog/scannerState.v}
+      \lstinputlisting[language=Verilog]{../verilog/scannerState_testbench.v}
+
+      % scanner.v
+      \lstinputlisting[language=Verilog]{../verilog/scanner.v}
+      \lstinputlisting[language=Verilog]{../verilog/scanner_testbench.v}
+
+      % overall.v
+      \lstinputlisting[language=Verilog]{../verilog/overall.v}
+      \lstinputlisting[language=Verilog]{../verilog/overall_testbench.v}
+
+    \subsubsection{iverilog \& gtkwave waveforms}
+      % counter gtkwave
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\linewidth]{figures/gtkwave/counter_gtkwave.png}
+        \caption{counter module waveform}
+        \label{fig:counter_gtkwave}
+      \end{figure}
+
+      % counterCtrl gtkwave
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\linewidth]{figures/gtkwave/counterCtrl_gtkwave.png}
+        \caption{counterCtrl module waveform}
+        \label{fig:counterCtrl_gtkwave}
+      \end{figure}
+
+      % scannerState gtkwave
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\linewidth]{figures/gtkwave/scannerState_gtkwave.png}
+        \caption{scannerState module waveform}
+        \label{fig:scannerState_gtkwave}
+      \end{figure}
+
+      % scanner gtkwave
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\linewidth]{figures/gtkwave/scanner_gtkwave.png}
+        \caption{scanner module waveform}
+        \label{fig:scanner_gtkwave}
+      \end{figure}
+
+      % overall gtkwave
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\linewidth]{figures/gtkwave/overall_gtkwave.png}
+        \caption{overall module waveform}
+        \label{fig:overall_gtkwave}
+      \end{figure}
+
+    \subsubsection{Signal Tap II data}
+
+  \subsection{C Program}
+    \lstinputlisting[language=C]{../c/calculateDelay.c}
+    \lstinputlisting[language=C]{../c/temperature.c}
+
+    % C program output
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.75\linewidth]{figures/c/calculateDelay_output.png}
+      \caption{Output of calculateDelay program}
+      \label{fig:calculateDelay_output}
+    \end{figure}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.75\linewidth]{figures/c/tempConv_output.png}
+      \caption{Output of temperature program}
+      \label{fig:tempConv_output}
+    \end{figure}
+\end{document}

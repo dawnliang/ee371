@@ -21,7 +21,7 @@ module scannerState_testbench();
 																														@(posedge clk);
 		reset <= 0;	goToStandby <= 0;	startScan <= 0;	startTransfer <= 0;	flush <= 0;	initialOn <= 0; prog <= 4'b0;	@(posedge clk);
 																						initialOn <= 1;					@(posedge clk);
-					goToStandby <= 1;																					@(posedge clk);
+					goToStandby <= 1;													initialOn <= 0;					@(posedge clk);
 					goToStandby <= 0;																					@(posedge clk);
 										startScan <= 1;																	@(posedge clk);
 										startScan <= 0;													prog <= 4'b1010;@(posedge clk);
