@@ -1,11 +1,14 @@
 `include "scanner.v"
-module overall(scan1_state_display, scan1_prog1_display, scan1_prog2_display, scan2_state_display, scan2_prog1_display, scan2_prog2_display,
+module overall(scan1_state, scan1_prog, scan2_state, scan2_prog,
+				scan1_state_display, scan1_prog1_display, scan1_prog2_display, scan1_readyToTransfer,
+				scan2_state_display, scan2_prog1_display, scan2_prog2_display, scan2_readyToTransfer,
 					initialOn, startTransfer, clk, reset);
-	input clk, reset;
-	input initialOn, startTransfer;
+	input clk, reset;					// 50MHz clock, SW[0]
+	input initialOn, startTransfer;		// KEY[0], KEY[1]
 
-	output reg [6:0]scan1_state_display, scan1_prog1_display, scan1_prog2_display,
-					scan2_state_display, scan2_prog1_display, scan2_prog2_display;
+	output reg [6:0]	scan1_state_display, scan1_prog1_display, scan1_prog2_display, // HEX 2:0
+						scan2_state_display, scan2_prog1_display, scan2_prog2_display; // HEX 5:3
+	output scan1_readyToTransfer, scan2_readyToTransfer;	// LED[0], LED[1]
 
 	// HEX encodings    6543210
 	parameter	HEXS = 7'b0010010,	// S s stands for Scanning state
@@ -14,7 +17,7 @@ module overall(scan1_state_display, scan1_prog1_display, scan1_prog2_display, sc
 				HEXd = 7'b0100001,	// d d stands for idle state
 				HEXb = 7'b1111100;	// b b stands for standby state
 
-	parameter	HEXOFF = 7'b1111111,// All segments are turned off to indicate Lowpower state
+	parameter	HEXOFF = 7'b1111111,// All segments are turned off
 				HEXON = 7'b0000000;	// All segments are turned on
 
 	parameter 	HEX0 = 7'b1000000,	// 0
@@ -27,11 +30,6 @@ module overall(scan1_state_display, scan1_prog1_display, scan1_prog2_display, sc
 				HEX7 = 7'b1111000,	// 7
 				HEX8 = 7'b0000000,	// 8
 				HEX9 = 7'b0010000;	// 9
-
-	parameter 	speed0 = 2'b00,		// 1x clock
-				speed1 = 2'b01,		// 2x clock
-				speed2 = 2'b10,		// 4x clock
-				speed3 = 2'b11;		// 8x clock
 
 	// state encodings
 	parameter	lowPower = 3'b000,
@@ -47,24 +45,24 @@ module overall(scan1_state_display, scan1_prog1_display, scan1_prog2_display, sc
 	// reg final_clock = divided_clocks[22];
 
 	// connecting wires
-	wire [3:0] scan1_prog, scan2_prog;
-	wire [2:0] scan1_state, scan2_state;
+	output [3:0] scan1_prog, scan2_prog;
+	output [2:0] scan1_state, scan2_state;
 	wire 	scan1_otherGoToStandby, scan1_otherStartScan, scan1_otherFlush,
 			scan2_otherGoToStandby, scan2_otherStartScan, scan2_otherFlush;
 
-	// the 2 scanners
-	scanner scan1 (.buffer_progress(scan1_prog), .state(scan1_state), .whichScanner(1'b1), .otherGoToStandby(scan1_otherGoToStandby),
-		.otherStartScan(scan1_otherStartScan), .otherFlush(scan1_otherFlush), .initialOn(initialOn),
-		.goToStandby(scan2_otherGoToStandby), .startScan(scan2_otherStartScan), .startTransfer(startTransfer),
-		.flush(scan2_otherFlush), .clk(clk), .reset(reset));
-	scanner scan2 (.buffer_progress(scan2_prog), .state(scan2_state), .whichScanner(1'b0), .otherGoToStandby(scan2_otherGoToStandby),
-		.otherStartScan(scan2_otherStartScan), .otherFlush(scan2_otherFlush), .initialOn(initialOn),
-		.goToStandby(scan1_otherGoToStandby), .startScan(scan1_otherStartScan), .startTransfer(startTransfer),
-		.flush(scan1_otherFlush), .clk(clk), .reset(reset));
+	// 2 scanners
+	scanner scan1 (.buffer_progress(scan1_prog), .state(scan1_state), .readyToTransfer(scan1_readyToTransfer),
+		.otherGoToStandby(scan1_otherGoToStandby), .otherStartScan(scan1_otherStartScan), .otherFlush(scan1_otherFlush),
+		.whichScanner(1'b1), .initialOn(initialOn), .goToStandby(scan2_otherGoToStandby), .startScan(scan2_otherStartScan),
+		.startTransfer(startTransfer), .flush(scan2_otherFlush), .clk(clk), .reset(reset));
+	scanner scan2 (.buffer_progress(scan2_prog), .state(scan2_state), .readyToTransfer(scan2_readyToTransfer),
+		.otherGoToStandby(scan2_otherGoToStandby), .otherStartScan(scan2_otherStartScan), .otherFlush(scan2_otherFlush),
+		.whichScanner(1'b0), .initialOn(initialOn), .goToStandby(scan1_otherGoToStandby), .startScan(scan1_otherStartScan),
+		.startTransfer(startTransfer), .flush(scan1_otherFlush), .clk(clk), .reset(reset));
 
 	// output logic
 	always@(*) begin
-		case (scan1_state_display)
+		case (scan1_state)
 			lowPower:	begin
 							scan1_state_display = HEXOFF;
 							scan1_prog1_display = HEXOFF;
@@ -246,7 +244,7 @@ module overall(scan1_state_display, scan1_prog1_display, scan1_prog2_display, sc
 							end
 		endcase
 
-		case (scan2_state_display)
+		case (scan2_state)
 			lowPower:	begin
 							scan2_state_display = HEXOFF;
 							scan2_prog1_display = HEXOFF;

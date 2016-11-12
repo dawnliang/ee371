@@ -38,7 +38,7 @@ module counterCtrl(val, state, clk, reset);
 							up = 0; down = 0;
 						end
 			scanning:	begin 									// count up at 1x speed
-							final_clock = divided_clocks[2];
+							final_clock = divided_clocks[3];
 							up = 1; down = 0;
 						end
 			idle:		begin

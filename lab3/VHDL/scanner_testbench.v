@@ -2,7 +2,7 @@
 module scanner_testbench();
 	reg clk, reset;
 	reg initialOn, goToStandby, startScan, startTransfer, flush;
-	wire otherGoToStandby, otherStartScan, otherFlush;
+	wire readyToTransfer, otherGoToStandby, otherStartScan, otherFlush;
 	wire [3:0] buffer_progress;
 	wire [2:0] state;
 
@@ -14,9 +14,10 @@ module scanner_testbench();
 		clk = ~clk;
 	end
 
-	scanner dut (.buffer_progress(buffer_progress), .state(state), .whichScanner(1'b0), .otherGoToStandby(otherGoToStandby),
-		.otherStartScan(otherStartScan), .otherFlush(otherFlush), .initialOn(initialOn), .goToStandby(goToStandby),
-		.startScan(startScan), .startTransfer(startTransfer), .flush(flush), .clk(clk), .reset(reset));
+	scanner dut (.buffer_progress(buffer_progress), .state(state), .readyToTransfer(readyToTransfer),
+		.otherGoToStandby(otherGoToStandby), .otherStartScan(otherStartScan), .otherFlush(otherFlush), .whichScanner(1'b1),
+		.initialOn(initialOn), .goToStandby(goToStandby), .startScan(startScan), .startTransfer(startTransfer), .flush(flush),
+		.clk(clk), .reset(reset));
 
 	initial begin
 		reset <= 1;																							@(posedge clk);
