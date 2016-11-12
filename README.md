@@ -25,7 +25,7 @@ C: Wrote a program that does computations through pointers instead of variables.
 ## Lab 3: Digital Scanning System
 - Build a basic real-world system using FSMs and HDL
 - Exercise basic concepts in time-bases and intra-system timing
-- 
+- Practice C programming data types and variable manipulation
 
 VHDL: Built a 2-scanner system that constantly scans by trading-off. The scanners monitor their buffer to determine when to wake the other scanner/prompt it to start scanning, and to transfer to a home base, otherwise flush out buffer data. Each scanner used an FSM to determine operating state, then modeled buffer using a min/max counter runinng on different clocks to model speed. Compiled & simulated with iverilog and gtkwave, then downloaded to hardware through Quartus and probed using Signal Tap II.
 
