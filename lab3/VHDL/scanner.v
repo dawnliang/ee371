@@ -1,48 +1,19 @@
-`include "counter.v"
-module scanner(buffer_percent, otherGoToStandby, otherStartScan, otherFlush, goToStandby, startScan, startTransfer, flush, clk, reset);
-	input goToStandby, startScan, startTransferflush;
+`include "scannerState.v"
+`include "counterCtrl.v"
+module scanner(buffer_progress, state, whichScanner, otherGoToStandby, otherStartScan, otherFlush,
+				initialOn, goToStandby, startScan, startTransfer, flush, clk, reset);
 	input clk, reset;
-	output [3:0] buffer_percent;
-	output outherGoToStandby, otherStartScan, otherFlush;
+	input initialOn, goToStandby, startScan, startTransfer, flush, whichScanner;
 
-	wire [3:0] prog;
+	output otherGoToStandby, otherStartScan, otherFlush;
+	output [3:0] buffer_progress;
+	output [2:0] state;
 
-	counter prog (.val(prog), .up(), .down(), .clk(), .reset());
+	scannerState statedet (.state(state), .whichScanner(whichScanner), .initialOn(initialOn), .goToStandby(goToStandby), .startScan(startScan),
+		.prog(buffer_progress), .startTransfer(startTransfer), .flush(flush), .clk(clk), .reset(reset));
+	counterCtrl prog (.val(buffer_progress), .state(state), .clk(clk), .reset(reset));
 
-	// state encodings
-	parameter	lowPower = 3'b000,
-				standby = 3'b001,
-				scanning = 3'b010,
-				idle = 3'b011,
-				xferring = 3'b100,
-				flushing = 3'b101;
-
-	// combinational logic
-	reg ps, ns;
-	always@(*) begin
-		case (ps)
-			lowPower:	if (goToStandby) ns = standby;
-						else ns = ps;
-			standby: 	if (startScan) ns = scanning;
-						else ns = ps;
-			scanning:	if (prog == 4'b1010) ns = idle;
-						else ns = ps;
-			idle:		if (startTransfer) ns = xferring;
-						else if (flush) ns = flushing;
-						else ns = ps;
-			xferring:	if (prog == 4'b0000) ns = lowPower;
-						else ns = ps;
-			flushing:	if (prog == 4'b0000) ns = lowPower;
-						else ns = ps;
-			default:	ns = lowPower;
-		endcase
-	end
-
-	always@(posedge clk) begin
-		if(reset) begin
-			ps <= lowPower;
-		end else begin
-			ps <= ns
-		end
-	end
+	assign otherGoToStandby = (buffer_progress == 8 && state == 3'b010);
+	assign otherStartScan = (buffer_progress == 9 && state == 3'b010);
+	assign otherFlush = (buffer_progress == 5 && state == 3'b010);
 endmodule
