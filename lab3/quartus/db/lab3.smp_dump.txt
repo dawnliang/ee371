@@ -1,0 +1,18 @@
+
+State Machine - |overall|scanner:scan2|scannerState:statedet|ps
+Name ps.flushing ps.xferring ps.idle ps.scanning ps.standby ps.lowPower 
+ps.lowPower 0 0 0 0 0 0 
+ps.standby 0 0 0 0 1 1 
+ps.scanning 0 0 0 1 0 1 
+ps.idle 0 0 1 0 0 1 
+ps.xferring 0 1 0 0 0 1 
+ps.flushing 1 0 0 0 0 1 
+
+State Machine - |overall|scanner:scan1|scannerState:statedet|ps
+Name ps.flushing ps.xferring ps.idle ps.scanning ps.standby ps.lowPower 
+ps.lowPower 0 0 0 0 0 0 
+ps.standby 0 0 0 0 1 1 
+ps.scanning 0 0 0 1 0 1 
+ps.idle 0 0 1 0 0 1 
+ps.xferring 0 1 0 0 0 1 
+ps.flushing 1 0 0 0 0 1 

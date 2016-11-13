@@ -1,0 +1,273 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "scan1_state[0]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_state[1]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_state[2]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog[0]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog[1]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog[2]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog[3]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_state[0]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_state[1]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_state[2]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog[0]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog[1]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog[2]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog[3]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_otherGoToStandby",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_otherStartScan",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_otherFlush",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_otherGoToStandby",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_otherStartScan",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_otherFlush",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_state_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_state_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_state_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_state_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_state_display[4]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_state_display[5]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_state_display[6]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog1_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog1_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog1_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog1_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog1_display[4]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog1_display[5]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog2_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog2_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog2_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog2_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog2_display[4]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog2_display[5]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_prog2_display[6]",
+					"strict" : false
+				},
+				{
+					"name" : "scan1_readyToTransfer",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_state_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_state_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_state_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_state_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_state_display[4]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_state_display[5]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_state_display[6]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog1_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog1_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog1_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog1_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog1_display[4]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog1_display[5]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog2_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog2_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog2_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog2_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog2_display[4]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog2_display[5]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_prog2_display[6]",
+					"strict" : false
+				},
+				{
+					"name" : "scan2_readyToTransfer",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "initialOn",
+					"strict" : false
+				},
+				{
+					"name" : "startTransfer",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
