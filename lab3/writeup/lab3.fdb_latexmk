@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1479077664 "lab3.tex" "lab3.pdf" "lab3" 1479077668
+["pdflatex"] 1479201738 "lab3.tex" "lab3.pdf" "lab3" 1479201743
   "../c/calculateDelay.c" 1478885258 1335 58d925eb99b6d95dbfef61373d87d5eb ""
   "../c/temperature.c" 1478981540 2443 12706171f75b2ddd2c835e83f5784ea2 ""
   "../verilog/counter.v" 1479077174 741 a41032f97a4ef9bb0323046ddfe2e51e ""
@@ -126,11 +126,11 @@
   "figures/gtkwave/scanner_gtkwave.png" 1478975268 43679 efe2b97d5aba1dd4198365eb022ea107 ""
   "figures/stp/flush_stp_output.PNG" 1478998613 20386 5f89c8b946184be8465acab67744e90b ""
   "figures/stp/startScan_stp_output.PNG" 1478998616 13089 27c9e52861166bb0ca2913dfec79f552 ""
-  "lab3.aux" 1479077668 8536 af0915411241000a9a4fd2cac5baa30d ""
-  "lab3.tex" 1479077655 30402 75282c880537492e5dbf3d78902532f8 ""
-  "lab3.toc" 1479077668 3161 9be6888a750f0194191a8c0f1ec470ef ""
+  "lab3.aux" 1479201743 8536 af0915411241000a9a4fd2cac5baa30d ""
+  "lab3.tex" 1479201735 30402 c588645a398638540b9be3c305c2f766 ""
+  "lab3.toc" 1479201743 3161 9be6888a750f0194191a8c0f1ec470ef ""
   (generated)
   "lab3.pdf"
-  "lab3.aux"
-  "lab3.log"
   "lab3.toc"
+  "lab3.log"
+  "lab3.aux"

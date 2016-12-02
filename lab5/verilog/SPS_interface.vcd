@@ -1,0 +1,160 @@
+$date
+	Fri Dec  2 02:48:08 2016
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module SPS_interface_testbench $end
+$var wire 1 ! dataOut $end
+$var wire 10 " LED [9:0] $end
+$var reg 1 # SW $end
+$var reg 1 $ clk $end
+$var reg 1 % dataIn $end
+$var reg 1 & rst $end
+$scope module dut $end
+$var wire 1 # SW $end
+$var wire 1 $ clk $end
+$var wire 1 ' dataIn $end
+$var wire 1 ! dataOut $end
+$var wire 1 ( load $end
+$var wire 10 ) pDataOut [9:0] $end
+$var wire 1 & rst $end
+$var wire 1 * sDataIn $end
+$var wire 1 + sDataOut $end
+$var wire 10 , pDataIn [9:0] $end
+$var wire 1 - final_clock $end
+$var wire 32 . divided_clocks [31:0] $end
+$var wire 1 / charSent $end
+$var wire 1 0 charReceived $end
+$var wire 1 1 bit_clkOut $end
+$var wire 1 2 bit_clkIn $end
+$var wire 4 3 bitProgressOut [3:0] $end
+$var wire 4 4 bitProgressIn [3:0] $end
+$var wire 10 5 LED [9:0] $end
+$var reg 1 6 data_display $end
+$var reg 1 7 enable $end
+$var reg 1 8 transmitEnable $end
+$scope module bic_in $end
+$var wire 1 2 clk $end
+$var wire 1 7 enable $end
+$var wire 1 & rst $end
+$var wire 1 0 nextChar $end
+$var reg 4 9 whichBit [3:0] $end
+$upscope $end
+$scope module bic_out $end
+$var wire 1 1 clk $end
+$var wire 1 8 enable $end
+$var wire 1 & rst $end
+$var wire 1 / nextChar $end
+$var reg 4 : whichBit [3:0] $end
+$upscope $end
+$scope module bsc_in $end
+$var wire 1 - clk $end
+$var wire 1 7 enable $end
+$var wire 1 & rst $end
+$var wire 4 ; bitProgress [3:0] $end
+$var reg 4 < count [3:0] $end
+$upscope $end
+$scope module bsc_out $end
+$var wire 1 - clk $end
+$var wire 1 8 enable $end
+$var wire 1 & rst $end
+$var wire 4 = bitProgress [3:0] $end
+$var reg 4 > count [3:0] $end
+$upscope $end
+$scope module cdiv $end
+$var wire 1 $ clk $end
+$var wire 32 ? divided_clocks [31:0] $end
+$var reg 32 @ clocks [31:0] $end
+$upscope $end
+$scope module psOut $end
+$var wire 1 1 clk $end
+$var wire 1 ( load $end
+$var wire 10 A parallelIn [9:0] $end
+$var wire 1 & rst $end
+$var wire 1 + serialOut $end
+$var reg 10 B data [9:0] $end
+$upscope $end
+$scope module spIn $end
+$var wire 1 2 clk $end
+$var wire 10 C parallelOut [9:0] $end
+$var wire 1 & rst $end
+$var wire 1 * serialIn $end
+$var reg 10 D data [9:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 D
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+b0 :
+b0 9
+x8
+07
+06
+b0 5
+b0 4
+b0 3
+02
+01
+00
+0/
+b0 .
+0-
+b0 ,
+0+
+z*
+b0 )
+0(
+x'
+1&
+x%
+0$
+x#
+b0 "
+z!
+$end
+#5
+b1 .
+b1 ?
+b1 @
+08
+0'
+0%
+0#
+0&
+1$
+#10
+0$
+#15
+b10 .
+b10 ?
+b10 @
+1$
+#20
+0$
+#25
+b11 .
+b11 ?
+b11 @
+1$
+#30
+0$
+#35
+b100 .
+b100 ?
+b100 @
+1$

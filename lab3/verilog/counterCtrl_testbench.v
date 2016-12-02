@@ -3,6 +3,7 @@
 // Date: 13 Nov 2016
 //
 // testbench for counterCtrl module; tests all possible state inputs
+`include "counterCtrl.v"
 module counterCtrl_testbench();
 	reg [2:0] state;
 	reg clk, reset;

@@ -4,6 +4,8 @@
 //
 // controls a counter that counts up/down at different speeds depending on
 // the state input
+`include "clock_divider.v"
+`include "counter.v"
 module counterCtrl(val, state, clk, reset);
 	input [2:0] state;
 	input clk, reset;
