@@ -4,9 +4,10 @@ module bic_testbench();
 	reg clk, rst;
 	reg enable;
 	wire nextChar;
+	wire [3:0] whichBit;
 
 	// device under test
-	bic dut (.nextChar(nextChar), .enable(enable), .clk(clk), .rst(rst));
+	bic dut (.nextChar(nextChar), .whichBit(whichBit), .enable(enable), .clk(clk), .rst(rst));
 
 	// set up clock
 	parameter PERIOD = 10;

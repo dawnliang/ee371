@@ -1,6 +1,5 @@
 `include "clock_divider.v"
-`include "bic.v"
-`include "bsc.v"
+`include "bitCounter.v"
 `include "spShiftReg.v"
 `include "psShiftReg.v"
 module SPS_interface(LED, SW, dataOut, dataIn, clk, rst);
@@ -49,11 +48,7 @@ module SPS_interface(LED, SW, dataOut, dataIn, clk, rst);
 		endcase
 	end
 
-	// bic & bsc ctrl lines
-	wire [3:0] bitProgressIn;
-	bsc bsc_in (.bitProgress(bitProgressIn), .enable(enable), .clk(final_clock), .rst(rst));
-	wire bit_clkIn = (bitProgressIn == 4'b0111);	// posedge at middle sample of every bit; signals next bit
-	bic bic_in (.nextChar(charReceived), .enable(enable), .clk(bit_clkIn), .rst(rst));
+	bitCounter countIn (.bitClock(bit_clkIn), .nextChar(charReceived), .enable(enable), .clk(final_clock), .rst(rst));
 
 	// shift register data buffer
 	spShiftReg spIn (.parallelOut(pDataIn), .serialIn(sDataIn), .clk(bit_clkIn), .rst(rst));
@@ -63,12 +58,7 @@ module SPS_interface(LED, SW, dataOut, dataIn, clk, rst);
 
 	// transmission ctrl signals from nios
 	wire load, transmitEnable;
-
-	// bic & bsc ctrl lines
-	wire [3:0] bitProgressOut;
-	bsc bsc_out (.bitProgress(bitProgressOut), .enable(transmitEnable), .clk(final_clock), .rst(rst));
-	wire bit_clkOut = (bitProgressOut == 4'b0111);	// posedge at middle sample of every bit; signals next bit
-	bic bic_out (.nextChar(charSent), .enable(transmitEnable), .clk(bit_clkOut), .rst(rst));
+	bitCounter countOut (.bitClock(bit_clkOut), .nextChar(charSent), .enable(transmitEnable), .clk(final_clock), .rst(rst));
 
 	// shift register data buffer
 	psShiftReg psOut(.serialOut(sDataOut), .parallelIn(pDataOut), .load(load), .clk(bit_clkOut), .rst(rst));
