@@ -30,3 +30,16 @@ C: Wrote a program that does computations through pointers instead of variables.
 VHDL: Built a 2-scanner system that constantly scans by trading-off. The scanners monitor their buffer to determine when to wake the other scanner/prompt it to start scanning, and to transfer to a home base, otherwise flush out buffer data. Each scanner used an FSM to determine operating state, then modeled buffer using a min/max counter runinng on different clocks to model speed. Compiled & simulated with iverilog and gtkwave, then downloaded to hardware through Quartus and probed using Signal Tap II.
 
 C: Wrote programs that manipulate various data types of variables. One program converts temperature units, the other calculates total gate delay based on the number and type of gates.
+
+## Lab 4: Intro to NIOS II processors
+- Build simple NIOS II processors using QSys in Quartus
+- Run simple programs on our processors
+
+VHDL: Used QSys to generate Verilog to instantiate the Nios II processors on our FPGAs. Processors included a clock, cpu, memory, pio's, and jtag transfer.
+
+C: Wrote programs in Eclipse that ran on our processor, such as count_binary, lights_and_switches, and modified lights_and_switches
+
+## Lab 5: Scanner communication system
+- Build a serial-parallel-serial interface for communicating between FPGAs
+
+VHDL: Wrote a SPS-interface for taking serial input and converting it to parallel output for a Nios II processor; taking parallel input from a Nios II processor and outputting it serially for communication. Built using shift registers and bit/bsc timing control.
