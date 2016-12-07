@@ -1,0 +1,6 @@
+20:42:48 **** Clean-only build of configuration Nios II for project scannerIO_bsp ****
+make clean 
+[BSP clean complete]
+
+20:42:49 Build Finished (took 1s.406ms)
+

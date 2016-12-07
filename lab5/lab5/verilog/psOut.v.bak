@@ -1,0 +1,16 @@
+// PARALLEL DATA OUT OF NIOS II
+`include "bitCounter.v"
+`include "psShiftReg.v"
+module psOut(serialOut, charSent, data, parallelIn, load, transmitEnable, clk, rst);
+	input clk, rst;
+	input load, transmitEnable;
+	input [7:0] parallelIn;
+	output serialOut;
+	output charSent;
+	output [10:0] data;
+
+	// bit counter & data shifting
+	wire bit_clk;
+	bitCounter #(11) countOut (.bitClock(bit_clk), .nextChar(charSent), .enable(transmitEnable), .clk(clk), .rst(rst));
+	psShiftReg psOut(.serialOut(serialOut), .data(data), .parallelIn(parallelIn), .load(load), .bit_clk(bit_clk), .clk(clk), .rst(rst));
+endmodule

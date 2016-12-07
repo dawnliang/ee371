@@ -1,0 +1,9 @@
+22:04:07 **** Incremental Build of configuration Nios II for project scannerIO ****
+make all 
+Info: Building ../scannerIO_bsp/
+C:/altera/16.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../scannerIO_bsp/
+[BSP build complete]
+[scannerIO build complete]
+
+22:04:08 Build Finished (took 684ms)
+
